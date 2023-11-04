@@ -1,0 +1,264 @@
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+  
+a {
+    color: inherit;
+    text-decoration: none;
+}
+  
+img {
+    max-width: 100%;
+}
+
+/** Montserrat-Alt1 Regular **/
+@font-face {
+    font-family: 'Montserrat-Alt1';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Montserrat-Alt1'),
+         url('../fonts/MontserratAlt1-Regular.woff2') format('woff2'),
+         url('../fonts/MontserratAlt1-Regular.woff') format('woff');
+}
+
+/** Montserrat-Alt1 Medium **/
+@font-face {
+    font-family: "Montserrat-Alt1";
+    font-weight: 500;
+    font-style: normal;
+    src: local('Montserrat-Alt1'),
+         url("../fonts/MontserratAlt1-Medium.woff2") format("woff2"),
+         url("../fonts/MontserratAlt1-Medium.woff") format("woff");
+}
+
+/** Montserrat-Alt1 SemiBold **/
+@font-face {
+    font-family: "Montserrat-Alt1";
+    font-weight: 600;
+    font-style: normal;
+    src: local('Montserrat-Alt1'),
+         url("../fonts/MontserratAlt1-SemiBold.woff2") format("woff2"),
+         url("../fonts/MontserratAlt1-SemiBold.woff") format("woff");
+}
+
+/** Montserrat-Alt1 Bold **/
+@font-face {
+    font-family: "Montserrat-Alt1";
+    font-weight: 700;
+    font-style: normal;
+    src: local('Montserrat-Alt1'),
+         url("../fonts/MontserratAlt1-Bold.woff2") format("woff2"),
+         url("../fonts/MontserratAlt1-Bold.woff") format("woff");
+}
+
+.flex {
+    display: flex;
+}
+
+.page {
+    position: relative;
+    min-width: 320px;
+    margin: 0;
+    font-family: 'Montserrat-Alt1', sans-serif;
+    overflow: hidden;
+}
+
+.canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.main {
+    height: 1000px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-block {
+    width: 500px;
+    height: 600px;
+    padding: 30px 20px;
+    border: 1px solid rgba(122, 18, 18, 0.3);
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    background: transparent;
+}
+
+.main-block__btn-img {
+    position: absolute;
+    top: 24%;
+    right: 8%;
+    width: 40px;
+    border-radius: 100%;
+    fill: #ff4b4b;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.main-block__btn-img.active {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.main-block-logo {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main-block-logo__svg {
+    width: 80px;
+}
+
+.main-block-logo__compname {
+    margin: 0;
+    padding-top: 24px;
+    font-size: 44px;
+    color: #ff4b4b;
+}
+
+.main-block-elements {
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-block-elements-list {
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.main-block-elements-list-text {
+    transition: transform .2s ease-in-out;
+}
+
+.main-block-elements-list-text.login {
+    transform: translateY(-383px);
+}
+
+.main-block-elements-list-text.register {
+    transform: translateY(-383px);
+}
+
+.main-block-elements-list-text__title {
+    margin: 0;
+    margin-bottom: 76px;
+    text-align: center;
+    font-size: 29px;
+    color: #fff;
+}
+
+.main-block-elements-list-text__descr {
+    margin: 0;
+    margin-bottom: 109px;
+    text-align: center;
+    font-size: 23px;
+    color: #fff;
+}
+
+.main-block-elements-list-choice {
+    gap: 25px;
+    justify-content: center;
+}
+
+.main-block-elements-list-choice__btn {
+    border: none;
+    border: 2px solid rgba(122, 18, 18, 0.5);
+    border-radius: 24px;
+    padding: 8px 49px;
+    font-family: 'Montserrat-Alt1', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+}
+
+.main-block-formLog {
+    position: absolute;
+    flex-direction: column;
+    margin-bottom: 60px;
+    color: #fff;
+    transform: translateX(-500px);
+    transition: transform .1s;
+}
+
+.main-block-formLog.login {
+    transform: translateX(50px);
+}
+
+.main-block-formLog__login {
+    border: none;
+    border-bottom: 2px solid #c93a3a;
+    margin-bottom: 25px;
+    padding: 14px 50px 20px 14px;
+    color: #fff;
+    background: transparent;
+}
+
+.main-block-formLog__password {
+    border: none;
+    border-bottom: 2px solid #c93a3a;
+    margin-bottom: 25px;
+    padding: 14px 50px 20px 14px;
+    color: #fff;
+    background: transparent;
+}
+
+.main-block-formReg {
+    position: absolute;
+    flex-direction: column;
+    margin-bottom: 20px;
+    color: #fff;
+    transform: translateX(660px);
+    transition: transform .1s;
+}
+
+.main-block-formReg.register {
+    transform: translateX(50px);
+}
+
+.main-block-formLog-label {
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.main-block-formReg__login {
+    border: none;
+    border-bottom: 2px solid #c93a3a;
+    margin-bottom: 25px;
+    width: 350px;
+    padding: 14px 50px 20px 14px;
+    color: #fff;
+    background: transparent;
+}
+
+.main-block-formReg__password {
+    border: none;
+    border-bottom: 2px solid #c93a3a;
+    margin-bottom: 25px;
+    padding: 14px 50px 20px 14px;
+    color: #fff;
+    background: transparent;
+}
+
+.main-block-formReg__password1 {
+    border: none;
+    border-bottom: 2px solid #c93a3a;
+    margin-bottom: 25px;
+    padding: 14px 50px 20px 14px;
+    color: #fff;
+    background: transparent;
+}
