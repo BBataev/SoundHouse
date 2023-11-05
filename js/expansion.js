@@ -1,6 +1,5 @@
 (() => {
   const loginBtn = document.getElementById('login');
-
   const registerBtn = document.getElementById('register');
 
   const papa = document.querySelector('.main-block-elements-list-text');
@@ -10,6 +9,11 @@
   const registerForm = document.querySelector('.main-block-formReg');
 
   loginBtn.addEventListener('click', () => {
+    setTimeout(() => {
+      registerBtn.classList.remove('register-btn-active');
+      loginBtn.classList.add('login-btn-active');
+    }, 1);
+      
     papa.classList.remove('register');
     papa.classList.add('login');
 
@@ -20,6 +24,11 @@
   });
 
   registerBtn.addEventListener('click', () => {
+    setTimeout(() => {
+      loginBtn.classList.remove('login-btn-active');
+      registerBtn.classList.add('register-btn-active');
+    }, 1);
+
     papa.classList.remove('login');
     papa.classList.add('register');
 
@@ -30,6 +39,9 @@
   });
 
   backBtn.addEventListener('click', () => {
+    registerBtn.classList.remove('register-btn-active');
+    loginBtn.classList.remove('login-btn-active');
+    
     papa.classList.remove('register');
     papa.classList.remove('login');
 

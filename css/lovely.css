@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Montserrat-Alt1';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Montserrat-Alt1'),
+       url('../fonts/MontserratAlt1-Regular.woff2') format('woff2'),
+       url('../fonts/MontserratAlt1-Regular.woff') format('woff');
+}
+
 .overlay {
     position: fixed;
     top: 0;
@@ -32,10 +41,24 @@
     }
 }
 
+.animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.animation-logo {
+  width: 160px;
+}
+
 .animation-text {
     margin: 0;
+    padding-top: 55px;
+    font-family: 'Montserrat-Alt1', sans-serif;
     font-size: 100px;
-    color: #fff;
+    font-weight: 400;
+    color: #ff4b4b;
   }
   
 .no-scroll {

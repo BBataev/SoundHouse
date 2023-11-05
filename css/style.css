@@ -184,6 +184,19 @@ img {
     color: #fff;
     background: transparent;
     cursor: pointer;
+    transition: background-color .2s ease-in-out;
+}
+
+.login-btn-active {
+    background-color: #c93a3a;
+}
+
+.main-block-formLog__forget {
+    color: #ff4b4b;
+}
+
+.register-btn-active {
+    background-color: #c93a3a;
 }
 
 .main-block-formLog {
@@ -204,8 +217,13 @@ img {
     border-bottom: 2px solid #c93a3a;
     margin-bottom: 25px;
     padding: 14px 50px 20px 14px;
+    font-family: 'Montserrat-Alt1', sans-serif;
     color: #fff;
     background: transparent;
+}
+
+.main-block-formLog__login:focus {
+    outline: none;   
 }
 
 .main-block-formLog__password {
@@ -213,8 +231,13 @@ img {
     border-bottom: 2px solid #c93a3a;
     margin-bottom: 25px;
     padding: 14px 50px 20px 14px;
+    font-family: 'Montserrat-Alt1', sans-serif;
     color: #fff;
     background: transparent;
+}
+
+.main-block-formLog__password:focus {
+    outline: none;   
 }
 
 .main-block-formReg {
@@ -241,8 +264,13 @@ img {
     margin-bottom: 25px;
     width: 350px;
     padding: 14px 50px 20px 14px;
+    font-family: 'Montserrat-Alt1', sans-serif;
     color: #fff;
     background: transparent;
+}
+
+.main-block-formReg__login:focus {
+    outline: none;   
 }
 
 .main-block-formReg__password {
@@ -250,8 +278,13 @@ img {
     border-bottom: 2px solid #c93a3a;
     margin-bottom: 25px;
     padding: 14px 50px 20px 14px;
+    font-family: 'Montserrat-Alt1', sans-serif;
     color: #fff;
     background: transparent;
+}
+
+.main-block-formReg__password:focus {
+    outline: none;   
 }
 
 .main-block-formReg__password1 {
@@ -259,6 +292,26 @@ img {
     border-bottom: 2px solid #c93a3a;
     margin-bottom: 25px;
     padding: 14px 50px 20px 14px;
+    font-family: 'Montserrat-Alt1', sans-serif;
     color: #fff;
     background: transparent;
 }
+
+.main-block-formReg__password1:focus {
+    outline: none;   
+}
+
+.main-block-formReg__reppassword1 {
+    border: none;
+    border-bottom: 2px solid #c93a3a;
+    margin-bottom: 25px;
+    padding: 14px 50px 20px 14px;
+    font-family: 'Montserrat-Alt1', sans-serif;
+    color: #fff;
+    background: transparent;
+}
+
+.main-block-formReg__reppassword1:focus {
+    outline: none;   
+}
+

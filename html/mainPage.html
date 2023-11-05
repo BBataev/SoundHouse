@@ -5,28 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="/img/Logo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css">
-    <script defer src="/js/SHESH_bg.js"></script>
-    <script defer src="/js/script.js"></script>
+    <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/SHESH_bg.js"></script>
+    <script defer src="../js/expansion.js"></script>
+    <script defer src="../js/checkin.js"></script>
     <title>Bateev</title>
 </head>
 
 <body class="page">
     <main class="main flex">
         <div class="main-block">
-            <img class="main-block__btn-img" src="/img/arrow.svg">
+            <img class="main-block__btn-img" src="../img/arrow.svg">
             <div class="main-block-logo flex">
-                <img class="main-block-logo__svg" src="/img/Logo.svg" alt="Логотип Wolgen">
+                <img class="main-block-logo__svg" src="../img/logo.svg" alt="Логотип Wolgen">
                 <h1 class="main-block-logo__compname">BATEEV</h1>
             </div>
             <div class="main-block-elements flex">
-                <form class="main-block-formLog flex" action="">
-                    <input class="main-block-formLog__login" type="login" required placeholder="Username">
-                    <input class="main-block-formLog__password" type="password" required placeholder="Password">
+                <form class="main-block-formLog flex" action="../php/login.php" id="loginForm" method="post">
+                    <input class="main-block-formLog__login" type="email" name="email" required placeholder="Email">
+                    <input class="main-block-formLog__password" type="password" name="password" required placeholder="Password">
                     <div class="main-block-formLog-checkbox">
                         <label class="main-block-formLog-label">
-                            <input class="main-block-formLog-label__checkbox" type="checkbox">
+                            <input class="main-block-formLog-label__checkbox" type="checkbox" name="remember">
                             Remember me
                         </label>
                         <a class="main-block-formLog__forget" href="recover.html">
@@ -55,10 +56,11 @@
                     </div>
                 </div>
                 
-                <form class="main-block-formReg flex" action="">
-                    <input class="main-block-formReg__login" type="login" required placeholder="Username">
-                    <input class="main-block-formReg__password" type="password" required placeholder="Password">
-                    <input class="main-block-formReg__password1" type="password" required placeholder="Repeat password">
+                <form class="main-block-formReg flex" action="../php/register.php" id="registerForm" method="POST">
+                    <input class="main-block-formReg__login" type="username" name="username" required placeholder="Username">
+                    <input class="main-block-formReg__password" type="email" name="email" required placeholder="Email">
+                    <input class="main-block-formReg__password1" type="password" name="password" required placeholder="Password">
+                    <input class="main-block-formReg__password1" type="password" name="reppassword" required placeholder="Repeat password">
                 </form>
             </div>
         </div>
