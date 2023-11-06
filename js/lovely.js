@@ -33,5 +33,5 @@
     anim.remove();
     logo.remove();
     animtext.remove();
-  }, 2500); 
+  }, 2000); 
 })();

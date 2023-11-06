@@ -25,7 +25,7 @@ if ($result === false) {
         }
 
         // Перенаправьте пользователя на защищенную страницу или домашнюю страницу
-        header('Location: ../html/index.html');
+        header('Location: ../index.html');
         exit;
     } else {
         echo 'Пошел нахуй';

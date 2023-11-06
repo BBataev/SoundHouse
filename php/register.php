@@ -12,7 +12,8 @@ if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['passwor
 
     if ($password === $reppassword) {
         if ($conn -> query($sql) === TRUE) {
-            echo 'Success';
+            header('Location: ../index.html');
+            exit;
         } else {
             echo 'Error';
         }
