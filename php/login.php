@@ -23,7 +23,7 @@ if ($result === false) {
             $cookie_value = base64_encode($username . ':' . $password);
             setcookie($cookie_name, $cookie_value, time() + 30 * 24 * 60 * 60, '/'); // 30 дней
         }
-
+        
         // Перенаправьте пользователя на защищенную страницу или домашнюю страницу
         header('Location: ../index.html');
         exit;
@@ -31,4 +31,3 @@ if ($result === false) {
         echo 'Пошел нахуй';
     }
 }
-?>
