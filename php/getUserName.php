@@ -1,9 +1,10 @@
 <?php
+
 require_once('db.php');
 
 $id = $_COOKIE["user_id"];
 
-$sql = "SELECT `username` FROM `users` WHERE id = {$id}";
+$sql = "SELECT `username` FROM `users` WHERE `id` = '$id'";
 
 $result = $conn->query($sql);
 

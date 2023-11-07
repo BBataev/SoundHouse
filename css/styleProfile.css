@@ -96,6 +96,7 @@ img {
     align-items: center;
     width: 1000px;
     height: 300px;
+    border: 1px solid #ff4b4b;
     border-radius: 40px;
     background-color: #272222; 
 }

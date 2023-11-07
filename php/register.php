@@ -2,8 +2,21 @@
 
 require_once('db.php');
 
+function generateRandomString($length) {
+    $characters = array_merge(range('a', 'z'), range('A', 'Z'));
+    $randomString = '';
+
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[array_rand($characters)];
+    }
+
+    return $randomString;
+}
+
+$randomValue = generateRandomString(44);
+
 if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['reppassword'])) {
-    $id = rand(1000000000, 10000000000);
+    $id = rand(1000000000, 10000000000) . "_" . $randomValue;
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -34,4 +47,3 @@ if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['passwor
     echo "Не все данные были отправлены через форму.";
 }
 
-?>
