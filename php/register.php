@@ -3,7 +3,7 @@
 require_once('db.php');
 
 if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['reppassword'])) {
-    $id = rand(10000000, 99999999);
+    $id = rand(1000000000, 10000000000);
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password = $_POST['password'];
