@@ -1,0 +1,44 @@
+.profile {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    top: 65px;
+    right: 100px;
+    border: 1px solid #ff4b4b;
+    border-radius: 9px;
+    padding: 25px 29px 20px 11px;
+    backface-visibility: hidden;
+    background-color: #1e1e1e;
+    animation: reveal 0.5s;
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.profile__profile {
+    margin: 0;
+    padding: 5px 0 5px 0;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.profile__settings {
+    margin: 0;
+    padding: 5px 0 5px 0;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.profile__exit {
+    margin: 0;
+    padding: 5px 0 5px 0;
+    color: #ff4b4b;
+    cursor: pointer;
+}

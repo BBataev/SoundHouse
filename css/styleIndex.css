@@ -105,6 +105,7 @@ img {
 }
 
 .header__container {
+    position: relative;
     padding: 10px 30px;
     border-radius: 35px;
     justify-content: center;

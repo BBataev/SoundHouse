@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bateev</title>
+
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/lovely.css">
+    <link rel="stylesheet" href="css/styleProfMenu.css">
     <link rel="stylesheet" href="css/styleIndex.css">
-    <script defer src="js/getName.js"></script>
     <script defer src="js/isAutorized.js"></script>
     <script defer src="js/lovely.js"></script>
+    <script defer src="js/getName.js"></script>
+    <script defer src="js/profileMenu.js"></script>
+    
 </head>
 <body class="page">
     <header class="header">
@@ -16,9 +21,8 @@
             <a class="header__link" href="#">
                 <img class="header__link-img" src="img/logo.svg" alt="Logo Bateev">
             </a>
-            <div class="header-profile flex">
-                <h1 class="header-profile__name">
-                </h1>
+            <div class="header-profile flex"> <!-- getting from data base -->
+                <h1 class="header-profile__name"></h1> 
                 <img class="header-profile__img" src="img/profile.jpg" alt="Profile photo">
             </div>
         </div>
