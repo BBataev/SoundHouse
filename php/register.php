@@ -22,7 +22,7 @@ if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['passwor
             $cookie_name_id = 'user_id';
             setcookie($cookie_name_id, $id, time() + 30 * 24 * 60 * 60 * 12 * 60, '/'); // 60 лет лол
 
-            header('Location: ../index.html');
+            header('Location: ../home');
             exit;
         } else {
             echo 'Error';

@@ -18,17 +18,18 @@ if ($result === false) {
     if ($result->num_rows > 0) {
         session_start();
         $_SESSION['username'] = $username;
+        $cookie_name = 'remember_me';
+        $cookie_value = base64_encode($username . ':' . $password);
 
         if ($remember) {
-            $cookie_name = 'remember_me';
-            $cookie_value = base64_encode($username . ':' . $password);
             setcookie($cookie_name, $cookie_value, time() + 30 * 24 * 60 * 60, '/');
             
             $cookie_name_id = 'user_id';
             setcookie($cookie_name_id, $id, time() + 30 * 24 * 60 * 60 * 60 * 60, '/');
+        } else {
+            setcookie($cookie_name, $cookie_value, time() + 1, '/');
         }
-        
-        header('Location: ../index.html');
+        header('Location: ../home');
         exit;
     } else {
         echo 'Пошел нахуй';

@@ -10,7 +10,7 @@
 
   logo.src = '../img/logo.svg'
   // the phrase
-  animtext.textContent = 'BATEEV';
+  animtext.textContent = 'ANALFUCK';
 
   // styles add
   overlay.classList.add('overlay');

@@ -13,8 +13,6 @@
           const passwordL = formDataL.get('password');
           
           if (emailL && passwordL) {
-            console.log(emailL, passwordL);
-
             loginForm.submit();
           } else {
             console.log('Я гей');
@@ -31,7 +29,6 @@
           const passwordR = formDataR.get('password');
 
           if (usernameR && emailR && passwordR) {
-            console.log(usernameR, emailR, passwordR);
             registerForm.submit();
           } else {
             console.log('Я гей');

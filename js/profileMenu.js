@@ -32,11 +32,17 @@
             document.querySelector('.profile__exit').addEventListener('click', () => {
                 document.cookie = 'remember_me=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
 
-                window.location.href = "http://bateev.com/html/mainPage.html";
+                window.location.href = "http://bateev.com/login";
             })
         }
     });
 
-    
+    document.addEventListener('click', (event) => {
+        if (isOpen && event.target !== profile && !profile.contains(event.target)) {
+            const Mwindow = document.querySelector('.profile');
+            Mwindow.remove();
+            isOpen = false;
+        }
+    });
 
 })();
