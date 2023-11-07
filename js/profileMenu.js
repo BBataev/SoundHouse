@@ -29,11 +29,15 @@
             Mwindow.append(fillerExit);
             isOpen = true;
 
+            document.querySelector('.profile__profile').addEventListener('click', () => {
+                window.location.href = "http://bateev.com/user/profile";
+            })
+
             document.querySelector('.profile__exit').addEventListener('click', () => {
                 document.cookie = 'remember_me=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
 
                 window.location.href = "http://bateev.com/login";
-            })
+            });
         }
     });
 
