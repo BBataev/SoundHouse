@@ -40,7 +40,7 @@ img {
     font-weight: 400;
     font-style: normal;
     src: local('Montserrat-Alt1'),
-         url('../fonts/MontserratAlt1-Regular.woff2') format('woff2'),
+         url('../../fonts/MontserratAlt1-Regular.woff2') format('woff2'),
          url('../fonts/MontserratAlt1-Regular.woff') format('woff');
 }
 
@@ -50,7 +50,7 @@ img {
     font-weight: 500;
     font-style: normal;
     src: local('Montserrat-Alt1'),
-         url("../fonts/MontserratAlt1-Medium.woff2") format("woff2"),
+         url('../../fonts/MontserratAlt1-Medium.woff2') format("woff2"),
          url("../fonts/MontserratAlt1-Medium.woff") format("woff");
 }
 
@@ -60,7 +60,7 @@ img {
     font-weight: 600;
     font-style: normal;
     src: local('Montserrat-Alt1'),
-         url("../fonts/MontserratAlt1-SemiBold.woff2") format("woff2"),
+         url('../../fonts/MontserratAlt1-SemiBold.woff2') format("woff2"),
          url("../fonts/MontserratAlt1-SemiBold.woff") format("woff");
 }
 
@@ -70,7 +70,7 @@ img {
     font-weight: 700;
     font-style: normal;
     src: local('Montserrat-Alt1'),
-         url("../fonts/MontserratAlt1-Bold.woff2") format("woff2"),
+         url('../../fonts/MontserratAlt1-Bold.woff2') format("woff2"),
          url("../fonts/MontserratAlt1-Bold.woff") format("woff");
 }
 
