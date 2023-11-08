@@ -10,7 +10,7 @@
     popupinfophoto.accept = 'image/*';
     popupinfophoto.name = "image";
     popupinfo.textContent = 'Put liked photo';
-    popupform.formMethod = 'POST';
+    popupform.method = 'POST';
     popupform.enctype = "multipart/form-data";
     popupform.action = '../php/uploadPhoto.php'
     popupbtn.textContent = 'Upload';
