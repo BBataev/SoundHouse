@@ -1,4 +1,5 @@
 (() => {
+
     const popupdiv = document.createElement('div');
     const popupinfo = document.createElement('h2');
     const popupdiv2 = document.createElement('div');
@@ -44,4 +45,5 @@
         document.body.classList.remove("no-scroll");
     }
     });
+    
 })();
