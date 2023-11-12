@@ -1,9 +1,8 @@
 (() => {
 
+    //getting an id from url
     var currentUrl = window.location.href;
-
     var url = new URL(currentUrl);
-    
     var userId = url.searchParams.get("userId");
 
     var xhr = new XMLHttpRequest();
@@ -13,19 +12,32 @@
                 try {
                     const userData = JSON.parse(this.responseText);
                     
-                    //Uploading photo
-                    const imageContainer = document.querySelector('.main-profile__img');
-                    const imageName = '../../users_media/' + userId + '.jpg';
+                    //Uploading profile photo
+                    const profileImageContainer = document.querySelector('.main-profile__img');
+                    const profileImageName = '../../users_media/profileImage/' + userId + '_PROF.jpg';
 
-                    const img = new Image();
-                    img.onload = function() {
-                        imageContainer.src = img.src;
+                    const profileImage = new Image();
+                    profileImage.onload = function() {
+                        profileImageContainer.src = profileImage.src;
                     };
-                    img.onerror = function() {
+                    profileImage.onerror = function() {
                         const defaultImageSrc = '../../img/users-basic.jpg';
-                        imageContainer.src = defaultImageSrc;
+                        profileImageContainer.src = defaultImageSrc;
                     };
-                    img.src = imageName;
+                    profileImage.src = profileImageName;
+
+                    //Uploading profile background photo
+                    const BgImageContainer = document.querySelector('.header');
+                    const BgImageName = '../../users_media/BgImage/' + userId + '_BG.jpg';
+
+                    const BgImage = new Image();
+                    BgImage.onload = function() {
+                        BgImageContainer.style.backgroundImage = "url('" + BgImageName + "')";
+                    };
+                    BgImage.onerror = function() {
+                        BgImageContainer.style.backgroundImage = "url('../../img/profile-bg.jpg')";
+                    };
+                    BgImage.src = BgImageName;
 
                     //Uploading name
                     const userNameContainer = document.querySelector('.main-profile__name');

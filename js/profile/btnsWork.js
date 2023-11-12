@@ -28,11 +28,7 @@
     const popupInName = document.createElement('input');
     const popupbtn = document.createElement('button');
 
-    popupInName.type = 'username';
-    popupInName.name = "username";
-    popupinfo.textContent = 'Enter your new name';
     popupform.method = 'POST';
-    popupform.action = '../php/changeName.php'
     popupbtn.textContent = 'Upload';
     popupbtn.type = 'submit';
 
@@ -43,7 +39,6 @@
     popupInName.classList.add('popupinfophoto');
     popupbtn.classList.add('popupbtn');
 
-
     document.body.appendChild(popupdiv);
     popupdiv.appendChild(popupdiv2);
     popupdiv2.appendChild(popupinfo);
@@ -51,20 +46,31 @@
     popupform.appendChild(popupInName);
     popupform.appendChild(popupbtn);
 
-    const popup = document.querySelector('.popupName');
-
     //the button work itself, pathetic right?
     changeName.addEventListener('click', () => {
-        popup.classList.add('active');
+        popupInName.type = 'username';
+        popupInName.name = "username";
+        popupinfo.textContent = 'Enter your new name';
+        popupform.action = '../php/changeName.php'
+        popupdiv.classList.add('active');
+    });
+
+    changeBg.addEventListener('click', () => {
+        popupInName.type = 'file';
+        popupInName.accept = 'image/*'
+        popupInName.name = "image";
+        popupinfo.textContent = 'Upload new background';
+        popupform.enctype = "multipart/form-data";
+        popupform.action = '../php/changeBg.php'
+        popupdiv.classList.add('active');
     });
 
     window.addEventListener('click', (event) => {
-        if (event.target === popup) {
-            popup.classList.remove('active');
+        if (event.target === popupdiv) {
+            popupdiv.classList.remove('active');
             document.body.classList.remove("no-scroll");
         }
     });
-
 
 
 })();

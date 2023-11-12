@@ -5,7 +5,7 @@
     const userId = userIdCookie.split('=')[1];
 
     const baseName = userId; 
-    const imageName = '../../users_media/' + baseName + '.jpg';
+    const imageName = '../../users_media/profileImage/' + baseName + '_PROF.jpg';
 
     const img = new Image();
 

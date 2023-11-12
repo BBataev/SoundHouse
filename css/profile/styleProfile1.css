@@ -72,10 +72,11 @@ img {
 }
 
 .header {
-    padding-bottom: 480px;
-    background-image: url("../../img/profile-bg.jpg");
+    min-height: 480px;
+    background-image: url('../../img/profile-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 0;
 }
 
 .container {
