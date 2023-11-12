@@ -102,7 +102,7 @@ img {
     right: 8%;
     width: 40px;
     border-radius: 100%;
-    fill: #ff4b4b;
+    fill: var(--color-accent);
     z-index: 1;
     opacity: 0;
     transition: opacity .3s;
@@ -127,7 +127,7 @@ img {
     margin: 0;
     padding-top: 24px;
     font-size: 44px;
-    color: #ff4b4b;
+    color: var(--color-accent);
 }
 
 .main-block-elements {
@@ -158,7 +158,7 @@ img {
     margin-bottom: 76px;
     text-align: center;
     font-size: 29px;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .main-block-elements-list-text__descr {
@@ -166,7 +166,7 @@ img {
     margin-bottom: 109px;
     text-align: center;
     font-size: 23px;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .main-block-elements-list-choice {
@@ -180,29 +180,29 @@ img {
     padding: 8px 49px;
     font-family: 'Montserrat-Alt1', sans-serif;
     font-size: 24px;
-    color: #fff;
+    color: var(--color-white);
     background: transparent;
     cursor: pointer;
     transition: background-color .2s ease-in-out;
 }
 
 .login-btn-active {
-    background-color: #c93a3a;
+    background-color: var(--color-accent-active);
 }
 
 .main-block-formLog__forget {
-    color: #ff4b4b;
+    color: var(--color-accent);
 }
 
 .register-btn-active {
-    background-color: #c93a3a;
+    background-color: var(--color-accent-active);
 }
 
 .main-block-formLog {
     position: absolute;
     flex-direction: column;
     margin-bottom: 60px;
-    color: #fff;
+    color: var(--color-white);
     transform: translateX(-500px);
     transition: transform .1s ease-in-out;
 }
@@ -213,11 +213,11 @@ img {
 
 .main-block-formLog__login {
     border: none;
-    border-bottom: 2px solid #c93a3a;
+    border-bottom: 2px solid var(--color-accent-active);
     margin-bottom: 25px;
     padding: 14px 50px 20px 14px;
     font-family: 'Montserrat-Alt1', sans-serif;
-    color: #fff;
+    color: var(--color-white);
     background: transparent;
 }
 
@@ -227,11 +227,11 @@ img {
 
 .main-block-formLog__password {
     border: none;
-    border-bottom: 2px solid #c93a3a;
+    border-bottom: 2px solid var(--color-accent-active);
     margin-bottom: 25px;
     padding: 14px 50px 20px 14px;
     font-family: 'Montserrat-Alt1', sans-serif;
-    color: #fff;
+    color: var(--color-white);
     background: transparent;
 }
 
@@ -243,7 +243,7 @@ img {
     position: absolute;
     flex-direction: column;
     margin-bottom: 20px;
-    color: #fff;
+    color: var(--color-white);
     transform: translateX(660px);
     transition: transform .1s ease-in-out;
 }
@@ -259,12 +259,12 @@ img {
 
 .main-block-formReg__login {
     border: none;
-    border-bottom: 2px solid #c93a3a;
+    border-bottom: 2px solid var(--color-accent-active);
     margin-bottom: 25px;
     width: 350px;
     padding: 14px 50px 20px 14px;
     font-family: 'Montserrat-Alt1', sans-serif;
-    color: #fff;
+    color: var(--color-white);
     background: transparent;
 }
 
@@ -274,11 +274,11 @@ img {
 
 .main-block-formReg__password {
     border: none;
-    border-bottom: 2px solid #c93a3a;
+    border-bottom: 2px solid var(--color-accent-active);
     margin-bottom: 25px;
     padding: 14px 50px 20px 14px;
     font-family: 'Montserrat-Alt1', sans-serif;
-    color: #fff;
+    color: var(--color-white);
     background: transparent;
 }
 
@@ -288,11 +288,11 @@ img {
 
 .main-block-formReg__password1 {
     border: none;
-    border-bottom: 2px solid #c93a3a;
+    border-bottom: 2px solid var(--color-accent-active);
     margin-bottom: 25px;
     padding: 14px 50px 20px 14px;
     font-family: 'Montserrat-Alt1', sans-serif;
-    color: #fff;
+    color: var(--color-white);
     background: transparent;
 }
 
@@ -302,11 +302,11 @@ img {
 
 .main-block-formReg__reppassword1 {
     border: none;
-    border-bottom: 2px solid #c93a3a;
+    border-bottom: 2px solid var(--color-accent-active);
     margin-bottom: 25px;
     padding: 14px 50px 20px 14px;
     font-family: 'Montserrat-Alt1', sans-serif;
-    color: #fff;
+    color: var(--color-white);
     background: transparent;
 }
 

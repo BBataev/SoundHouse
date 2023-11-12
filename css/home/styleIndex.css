@@ -26,12 +26,12 @@ img {
 
 ::-webkit-scrollbar-track {
     border-radius: 10px;
-    background-color: black;
+    background-color: var(--color-black);
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: #ff4b4b; 
+    background-color: var(--color-accent); 
 }
 
 /** Montserrat-Alt1 Regular **/
@@ -89,7 +89,7 @@ img {
     margin: 0;
     font-family: 'Montserrat-Alt1', sans-serif;
     overflow: hidden;
-    background-color: #1E1E1E;
+    background-color: var(--color-black-1e);
 }
 
 .container {
@@ -110,7 +110,7 @@ img {
     border-radius: 35px;
     justify-content: center;
     align-items: center;
-    background-color: #251F1F;
+    background-color: var(--color-brown);
 }
 
 .header__link {
@@ -129,7 +129,7 @@ img {
     border-bottom-right-radius: 35px;
     justify-content: center;
     align-items: center;
-    background-color: #240E0E;
+    background-color: var(--color-burgundy);
     cursor: pointer;
 }
 
@@ -138,7 +138,7 @@ img {
     padding: 0 10px 0 25px;
     font-weight: 400;
     font-size: 18px;
-    color: #fff;
+    color: var(--color-white);
     background-image: url("/img/profile-arrow.svg");
     background-repeat: no-repeat;
     background-position: 10px;
@@ -161,7 +161,7 @@ img {
     width: 350px;
     height: 700px;
     border-radius: 20px;
-    background-color: #251f1f;
+    background-color: var(--color-brown);
 }
 
 .main-block-nav__nav {
@@ -173,7 +173,7 @@ img {
 
 .main-block-nav__nav-link {
     font-size: 32px;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .main-info {
@@ -188,5 +188,5 @@ img {
     width: 1320px;
     height: 830px;
     border-radius: 20px;
-    background-color: #251f1f;
+    background-color: var(--color-brown);
 }

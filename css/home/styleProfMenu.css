@@ -4,9 +4,9 @@
     flex-direction: column;
     top: 65px;
     right: 100px;
-    border: 1px solid #ff4b4b;
+    border: 1px solid var(--color-accent);
     border-radius: 9px;
-    background-color: #1e1e1e;
+    background-color: var(--color-black-1e);
     animation: reveal 0.5s;
 }
 
@@ -24,27 +24,27 @@
     border-top-right-radius: 9px;
     border-top-left-radius: 9px;
     padding: 20px 30px 15px 25px;
-    color: #fff;
+    color: var(--color-white);
     cursor: pointer;
     transition: color .1s ease-in-out, background-color .1s ease-in-out;
 }
 
 .profile__profile:hover {
-    color: #ff4b4b;
-    background-color: #424242;
+    color: var(--color-accent);
+    background-color: var(--color-gray-hover);
 }
 
 .profile__settings {
     margin: 0;
     padding: 15px 30px 15px 25px;
-    color: #fff;
+    color: var(--color-white);
     cursor: pointer;
     transition: color .1s ease-in-out, background-color .1s ease-in-out;
 }
 
 .profile__settings:hover {
-    color: #ff4b4b;
-    background-color: #424242;
+    color: var(--color-accent);
+    background-color: var(--color-gray-hover);
 }
 
 .profile__exit {
@@ -52,13 +52,13 @@
     border-bottom-right-radius: 9px;
     border-bottom-left-radius: 9px;
     padding: 15px 30px 15px 25px;
-    color: #fff;
+    color: var(--color-white);
     cursor: pointer;
     transition: color .1s ease-in-out, background-color .1s ease-in-out;
 }
 
 .profile__exit:hover {
 
-    color: #ff4b4b;
-    background-color: #424242;
+    color: var(--color-accent);
+    background-color: var(--color-gray-hover);
 }

@@ -14,7 +14,7 @@
                     
                     //Uploading profile photo
                     const profileImageContainer = document.querySelector('.main-profile__img');
-                    const profileImageName = '../../users_media/profileImage/' + userId + '_PROF.jpg';
+                    const profileImageName = '../../users_media/profileImage/' + userId + '_PROF.jpg' + '?timestamp=' + new Date().getTime();
 
                     const profileImage = new Image();
                     profileImage.onload = function() {
@@ -28,7 +28,7 @@
 
                     //Uploading profile background photo
                     const BgImageContainer = document.querySelector('.header');
-                    const BgImageName = '../../users_media/BgImage/' + userId + '_BG.jpg';
+                    const BgImageName = '../../users_media/BgImage/' + userId + '_BG.jpg' + '?timestamp=' + new Date().getTime();
 
                     const BgImage = new Image();
                     BgImage.onload = function() {

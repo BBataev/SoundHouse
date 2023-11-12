@@ -64,7 +64,7 @@ img {
     min-width: 320px;
     margin: 0;
     font-family: 'Montserrat-Alt1', sans-serif;
-    background-color: #1e1e1e;
+    background-color: var(--color-black-1e);
 }
 
 .flex {
@@ -88,7 +88,7 @@ img {
 .main {
     position: relative;
     min-height: 520px;
-    background-color: #251f1f;
+    background-color: var(--color-brown);
 }
 
 .main-profile {
@@ -98,9 +98,9 @@ img {
     align-items: center;
     width: 1000px;
     height: 300px;
-    border: 1px solid #ff4b4b;
+    border: 1px solid var(--color-accent);
     border-radius: 40px;
-    background-color: #272222; 
+    background-color: var(--color-brown-2); 
 }
 
 .main-profile__img {
@@ -116,7 +116,7 @@ img {
     padding-bottom: 80px;
     font-weight: 600;
     font-size: 55px;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .main-profile__svg {
@@ -128,7 +128,7 @@ img {
 }
 
 .main-profile__svg:hover {
-    fill: #c44747;
+    fill: var(--color-accent-active);
 }
 
 .main-changeMenu {
@@ -136,9 +136,9 @@ img {
     position: absolute;
     top: -80px;
     left: 365px;
-    border: 1px solid #ff4b4b;
+    border: 1px solid var(--color-accent);
     border-radius: 9px;
-    background-color: #1e1e1e;
+    background-color: var(--color-black-1e);
     transition: transform .3s ease-in-out;
 }
 
@@ -151,27 +151,27 @@ img {
     border-bottom-left-radius: 9px;
     margin: 0;
     padding: 25px;
-    color: #fff;
+    color: var(--color-white);
     cursor: pointer;
     transition: color .1s ease-in-out, background-color .1s ease-in-out;
 }
 
 .main-changeMenu__changeName:hover {
-    color: #ff4b4b;
-    background-color: #424242;
+    color: var(--color-accent);
+    background-color: var(--color-gray-hover);
 }
 
 .main-changeMenu__changeBg {
     margin: 0;
     padding: 25px;
-    color: #fff;
+    color: var(--color-white);
     cursor: pointer;
     transition: color .1s ease-in-out, background-color .1s ease-in-out;
 }
 
 .main-changeMenu__changeBg:hover {
-    color: #ff4b4b;
-    background-color: #424242;
+    color: var(--color-accent);
+    background-color: var(--color-gray-hover);
 }
 
 .main-changeMenu__changeStyle {
@@ -179,14 +179,14 @@ img {
     border-bottom-right-radius: 9px;
     margin: 0;
     padding: 25px;
-    color: #fff;
+    color: var(--color-white);
     cursor: pointer;
     transition: color .1s ease-in-out, background-color .1s ease-in-out;
 }
 
 .main-changeMenu__changeStyle:hover {
-    color: #ff4b4b;
-    background-color: #424242;
+    color: var(--color-accent);
+    background-color: var(--color-gray-hover);
 }
 
 
@@ -199,7 +199,7 @@ img {
     flex-direction: column;
     top: 100px;
     left: 110px;
-    border: 1px solid #ff4b4b;
+    border: 1px solid var(--color-accent);
     border-radius: 9px;
     background-color: #1e1e1e;
     animation: reveal 0.5s;
@@ -232,13 +232,13 @@ img {
     border-top-right-radius: 9px;
     border-top-left-radius: 9px;
     padding: 20px 30px 15px 25px;
-    color: #fff;
+    color: var(--color-white);
     cursor: pointer;
     transition: color .1s ease-in-out, background-color .1s ease-in-out;
 }
 
 .main-menu__change:hover {
-    color: #ff4b4b;
+    color: var(--color-accent);
     background-color: #424242;
 }
 
@@ -247,13 +247,13 @@ img {
     border-bottom-right-radius: 9px;
     border-bottom-left-radius: 9px;
     padding: 15px 30px 15px 25px;
-    color: #fff;
+    color: var(--color-white);
     cursor: pointer;
     transition: color .1s ease-in-out, background-color .1s ease-in-out;
 }
 
 .main-menu__delete:hover {
-    color: #ff4b4b;
+    color: var(--color-accent);
     background-color: #424242;
 }
 
@@ -298,7 +298,7 @@ img {
 .popupinfo {
     margin: 0;
     margin-bottom: 40px;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .popupform {
@@ -314,8 +314,8 @@ img {
     padding: 8px 36px;
     font-family: 'Montserrat-Alt1', sans-serif;
     font-size: 18px;
-    color: #fff;
-    background: #ff4b4b;
+    color: var(--color-white);
+    background: var(--color-accent);
     cursor: pointer;
     transition: background-color .2s ease-in-out;
 }
@@ -334,8 +334,8 @@ img {
     margin: 0;
     border-radius: 14px;
     padding: 15px 25px;
-    color: #fff;
-    background-color: #ff4b4b;
+    color: var(--color-white);
+    background-color: var(--color-accent);
     cursor: pointer;
 }
 
