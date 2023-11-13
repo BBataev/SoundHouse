@@ -19,7 +19,7 @@
     const changeName = document.querySelector('.main-changeMenu__changeName');
     const changeBg = document.querySelector('.main-changeMenu__changeBg');
     const changeStyle = document.querySelector('.main-changeMenu__changeStyle');
-
+    
     //creating another popup for possibility to write new name in the form
     const popupdiv = document.createElement('div');
     const popupinfo = document.createElement('h2');

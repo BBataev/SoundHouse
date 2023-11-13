@@ -45,6 +45,39 @@
 
                 </nav>
             </div>
+            <div class="main-colorPicker">
+                <div class="main-colorPicker2">
+                    <h2 class="main-colorPicker2__title">
+                        Choice the style of the page you want
+                    </h2>
+                    <div class="main-colorPicker2-separation">
+                        <div class="main-colorPicker-separation-miniPage">
+    
+                        </div>
+                        <form class="main-colorPicker2-separation-form" method="POST" action="../php/changeColor.php">
+                            <div class="main-colorPicker2-separation-form-colorChoicer">
+                                <div class="main-colorPicker2-separation-form-colorChoicer-accent">
+                                    <label class="main-colorPicker2-separation-form-colorChoicer-accent__label" for="colorPicker">Choose an accent color: </label>
+                                    <input type="color" id="accentColorPicker" name="accentColor" value="#ff4b4b">
+                                </div>
+                                
+                                <div class="main-colorPicker2-separation-form-colorChoicer-profile">
+                                    <label class="main-colorPicker2-separation-form-colorChoicer-profile__label" for="colorPicker">Choose a profile color: </label>
+                                    <input type="color" id="profileColorPicker" name="profileColor" value="#ff0000">
+                                </div>
+
+                                <div class="main-colorPicker2-separation-form-colorChoicer-main">
+                                    <label class="main-colorPicker2-separation-form-colorChoicer-main__label" for="colorPicker">Choose a main color: </label>
+                                    <input type="color" id="mainColorPicker" name="mainColor" value="#ff0000">
+                                </div>
+                            </div>
+                            <button class="main-colorPicker2-separation-form__button">
+                                Change page style
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>

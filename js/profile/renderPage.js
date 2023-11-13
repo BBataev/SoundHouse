@@ -41,7 +41,9 @@
 
                     //Uploading name
                     const userNameContainer = document.querySelector('.main-profile__name');
+                    const userTitle = document.querySelector('.profile-name');
                     userNameContainer.textContent = userData.username;
+                    userTitle.textContent = userData.username;
 
                 } catch (error) {
                     console.error('Ошибка при парсинге JSON:', error);
