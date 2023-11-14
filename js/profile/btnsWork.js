@@ -65,6 +65,18 @@
         popupdiv.classList.add('active');
     });
 
+    changeStyle.addEventListener('click', () => {
+        const popupdiv = document.querySelector('.main-colorPicker');
+
+        popupdiv.classList.add('active');
+        window.addEventListener('click', (event) => {
+            if (event.target === popupdiv) {
+                popupdiv.classList.remove('active');
+                document.body.classList.remove("no-scroll");
+            }
+        });
+    });
+
     window.addEventListener('click', (event) => {
         if (event.target === popupdiv) {
             popupdiv.classList.remove('active');

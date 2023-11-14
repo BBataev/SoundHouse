@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
-  animation: collapse 1s forwards 1s;
+  animation: collapse .7s forwards .2s ease-in-out ; 
 }
 
 @keyframes collapse {
