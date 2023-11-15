@@ -1,6 +1,6 @@
 <?php 
 
-require_once('db.php');
+require_once('dbRegister.php');
 
 function generateRandomString($length) {
     $characters = array_merge(range('a', 'z'), range('A', 'Z'));
@@ -13,6 +13,11 @@ function generateRandomString($length) {
     return $randomString;
 }
 
+$accent = '#ff4b4b';
+$profile = '#251f1f';
+$main = '#272222';
+$text = '#ffffff';
+
 $randomValue = generateRandomString(44);
 
 if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['reppassword'])) {
@@ -22,10 +27,13 @@ if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['passwor
     $password = $_POST['password'];
     $reppassword = $_POST['reppassword'];
 
-    $sql = "INSERT INTO `users` (id, username, email, password) VALUES ('$id', '$username', '$email', '$password')";
+    $sql_users = "INSERT INTO `users` (id, username, email, password) VALUES ('$id', '$username', '$email', '$password')";
+    $sql_styles = "INSERT INTO `style` (id, accent, profile, main, text) VALUES ('$id', '$accent', '$profile', '$main', '$text')";
     
+    $result = $conn->query($sql_styles);
+
     if ($password === $reppassword) {
-        if ($conn -> query($sql) === TRUE) {
+        if ($conn -> query($sql_users) === TRUE) {
             session_start();
 
             $cookie_name = 'remember_me';

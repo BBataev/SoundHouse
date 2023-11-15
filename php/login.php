@@ -1,6 +1,6 @@
 <?php
 
-require_once('db.php');
+require_once('dbRegister.php');
 
 $email = mysqli_real_escape_string($conn, $_POST['email']);
 $password = mysqli_real_escape_string($conn, $_POST['password']);

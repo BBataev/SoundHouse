@@ -6,4 +6,5 @@ $profileColor = $_POST['profileColor'];
 
 $mainColor = $_POST['mainColor'];
 
-echo $accentColor . $profileColor . $mainColor;
+$textColor = $_POST['textColor'];
+

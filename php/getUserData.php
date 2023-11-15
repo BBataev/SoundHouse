@@ -1,6 +1,6 @@
 <?php
 
-require_once('db.php');
+require_once('dbRegister.php');
 
 $id = $_GET['userId'];
 

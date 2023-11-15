@@ -1,6 +1,6 @@
 <?php
 
-require_once('db.php');
+require_once('dbRegister.php');
 
 if (isset($_FILES["image"]) && $_FILES["image"]["error"] == 0) {
     $target = "../users_media/BgImage/" . $_COOKIE['user_id'] . '_BG.jpg';
