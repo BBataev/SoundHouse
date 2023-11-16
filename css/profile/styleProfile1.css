@@ -63,8 +63,29 @@
     top: 31px;
     right: 36px;
     cursor: pointer;
+    fill: var(--color-accent);
     transition: fill .3s ease-in-out;
 }
+
+.main-profile__svg-ball {
+    transform-origin: center;
+    transform: scale(0);
+    animation: scaleUp .8s ease-out forwards;
+  }
+  
+  @keyframes scaleUp {
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .main-profile__svg-ball:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  
+  .main-profile__svg-ball:nth-child(3) {
+    animation-delay: 0.5s;
+  }
 
 .main-profile__svg:hover {
     fill: var(--color-accent-active);
@@ -77,7 +98,7 @@
     left: 365px;
     border: 1px solid var(--color-accent);
     border-radius: 9px;
-    background-color: var(--color-black-1e);
+    background-color: var(--color-main);
     transition: transform .3s ease-in-out;
 }
 
@@ -92,12 +113,12 @@
     padding: 25px;
     color: var(--color-text);
     cursor: pointer;
-    transition: color .1s ease-in-out, background-color .1s ease-in-out;
+    transition: color .2s ease-in-out, background-color .2s ease-in-out;
 }
 
 .main-changeMenu__changeName:hover {
     color: var(--color-accent);
-    background-color: var(--color-gray-hover);
+    background-color: var(--color-hover);
 }
 
 .main-changeMenu__changeBg {
@@ -105,12 +126,12 @@
     padding: 25px;
     color: var(--color-text);
     cursor: pointer;
-    transition: color .1s ease-in-out, background-color .1s ease-in-out;
+    transition: color .2s ease-in-out, background-color .2s ease-in-out;
 }
 
 .main-changeMenu__changeBg:hover {
     color: var(--color-accent);
-    background-color: var(--color-gray-hover);
+    background-color: var(--color-hover);
 }
 
 .main-changeMenu__changeStyle {
@@ -120,12 +141,12 @@
     padding: 25px;
     color: var(--color-text);
     cursor: pointer;
-    transition: color .1s ease-in-out, background-color .1s ease-in-out;
+    transition: color .2s ease-in-out, background-color .2s ease-in-out;
 }
 
 .main-changeMenu__changeStyle:hover {
     color: var(--color-accent);
-    background-color: var(--color-gray-hover);
+    background-color: var(--color-hover);
 }
 
 
@@ -140,7 +161,7 @@
     left: 110px;
     border: 1px solid var(--color-accent);
     border-radius: 9px;
-    background-color: #1e1e1e;
+    background-color: var(--color-main);
     animation: reveal 0.5s;
 }
 
@@ -173,12 +194,12 @@
     padding: 20px 30px 15px 25px;
     color: var(--color-text);
     cursor: pointer;
-    transition: color .1s ease-in-out, background-color .1s ease-in-out;
+    transition: color .2s ease-in-out, background-color .2s ease-in-out;
 }
 
 .main-menu__change:hover {
     color: var(--color-accent);
-    background-color: #424242;
+    background-color: var(--color-hover);
 }
 
 .main-menu__delete {
@@ -188,12 +209,12 @@
     padding: 15px 30px 15px 25px;
     color: var(--color-text);
     cursor: pointer;
-    transition: color .1s ease-in-out, background-color .1s ease-in-out;
+    transition: color .2s ease-in-out, background-color .2s ease-in-out;
 }
 
 .main-menu__delete:hover {
     color: var(--color-accent);
-    background-color: #424242;
+    background-color: var(--color-hover);
 }
 
 
@@ -231,12 +252,18 @@
     padding: 50px 50px 30px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    background: var(--color-brown-3);
+    background: var(--color-main);
+}
+
+.popupinfophoto {
+    outline: none;
+    border-radius: 15px;
+    padding: 10px 25px;
 }
 
 .popupinfo {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     color: var(--color-text);
 }
 
@@ -330,7 +357,7 @@
     padding: 30px 50px 30px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    background-color: var(--color-brown-3);
+    background-color: var(--color-main);
     align-items: center;
     display: flex;
     flex-direction: column;

@@ -50,6 +50,7 @@
     changeName.addEventListener('click', () => {
         popupInName.type = 'username';
         popupInName.name = "username";
+        popupInName.placeholder = 'Username (max 20)'
         popupinfo.textContent = 'Enter your new name';
         popupform.action = '../php/changeName.php'
         popupdiv.classList.add('active');
