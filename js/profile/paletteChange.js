@@ -7,13 +7,13 @@
 
     var coloredProfile = document.querySelector(".main-colorPicker-separation-mini-main-profile");
     var coloredMain = document.querySelector(".main-colorPicker-separation-mini ");
-    var coloredAccent = document.querySelector(".main-colorPicker-separation-mini-main-accent");
     var coloredBtn = document.querySelector(".main-colorPicker-separation-mini-main-btn__btn");
     var coloredName = document.querySelector(".main-colorPicker-separation-mini-main-profile__name");
 
     colorChoicerAccent.addEventListener("input", function () {
         var selectedColor = colorChoicerAccent.value;
         coloredBtn.style.backgroundColor = selectedColor;
+        coloredProfile.style.border = "1px solid " + selectedColor;
     });
 
     colorChoicerProfile.addEventListener("input", function () {

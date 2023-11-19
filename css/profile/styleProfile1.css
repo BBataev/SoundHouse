@@ -502,10 +502,10 @@ input[type="color"]::-webkit-color-swatch {
 
 .main-colorPicker-separation-mini-main-btn__btn {
     position: absolute;
-    right: 30px;
-    top: 238px;
+    right: 36px;
+    top: 241px;
     border-radius: 5px;
-    padding: 8px 32px;
+    padding: 9px 40px;
     margin: 0;
     background-color: var(--color-accent);
 }

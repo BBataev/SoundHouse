@@ -29,7 +29,7 @@ if ($result === false) {
         } else {
             setcookie($cookie_name, $cookie_value, time() + 1, '/');
         }
-        header('Location: ../home');
+        header('Location: ../main');
         exit;
     } else {
         echo 'Пошел нахуй';

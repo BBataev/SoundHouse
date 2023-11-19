@@ -1,10 +1,10 @@
 (() => {
 
-    //That's a "Back to home button" its function is to back on the home page
+    //That's a "Back to main button" its function is to back on the main page
     const backBtn = document.querySelector('.main-nav__descr');
     
     backBtn.addEventListener('click', () => {
-        window.location.href = '../home';
+        window.location.href = '../main';
     });
 
     //"3 dots on the right side of the profile panel" its function is to open a changing menu

@@ -12,5 +12,5 @@ function checkCookie(cookieName) {
 // Проверяем наличие определенного куки
 var myCookieName = 'remember_me';
 if (checkCookie(myCookieName)) {
-    window.location.href = '../home';
+    window.location.href = '../main';
 }

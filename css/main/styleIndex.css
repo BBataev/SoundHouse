@@ -173,10 +173,13 @@ img {
 
 .main-block-nav__nav-link {
     border-radius: 25px;
+    margin: 0;
     padding: 20px 0px 20px 40px;
     width: 260px;
     font-size: 32px;
     color: var(--color-text);
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
 }
 
 .main-block-nav__nav-link.choosed {
