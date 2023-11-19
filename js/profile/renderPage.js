@@ -14,36 +14,44 @@
                     
                     //Uploading profile photo
                     const profileImageContainer = document.querySelector('.main-profile__img');
+                    const profileImageContainerMini = document.querySelector('.main-colorPicker-separation-mini-main-profile__img');
                     const profileImageName = '../../users_media/profileImage/' + userId + '_PROF.jpg' + '?timestamp=' + new Date().getTime();
 
                     const profileImage = new Image();
                     profileImage.onload = function() {
                         profileImageContainer.src = profileImage.src;
+                        profileImageContainerMini.src = profileImage.src;
                     };
                     profileImage.onerror = function() {
                         const defaultImageSrc = '../../img/users-basic.jpg';
                         profileImageContainer.src = defaultImageSrc;
+                        profileImageContainerMini.src = defaultImageSrc;
                     };
                     profileImage.src = profileImageName;
 
                     //Uploading profile background photo
                     const BgImageContainer = document.querySelector('.header');
+                    const BgImageContainerMini = document.querySelector('.main-colorPicker-separation-mini-header');
                     const BgImageName = '../../users_media/BgImage/' + userId + '_BG.jpg' + '?timestamp=' + new Date().getTime();
 
                     const BgImage = new Image();
                     BgImage.onload = function() {
                         BgImageContainer.style.backgroundImage = "url('" + BgImageName + "')";
+                        BgImageContainerMini.style.backgroundImage = "url('" + BgImageName + "')";
                     };
                     BgImage.onerror = function() {
                         BgImageContainer.style.backgroundImage = "url('../../img/profile-bg.jpg')";
+                        BgImageContainerMini.style.backgroundImage = "url('../../img/profile-bg.jpg')";
                     };
                     BgImage.src = BgImageName;
 
                     //Uploading name
                     const userNameContainer = document.querySelector('.main-profile__name');
                     const userTitle = document.querySelector('.profile-name');
+                    const miniNmae = document.querySelector('.main-colorPicker-separation-mini-main-profile__name');
                     userNameContainer.textContent = userData.username;
                     userTitle.textContent = userData.username;
+                    miniNmae.textContent = userData.username;
 
                 } catch (error) {
                     console.error('Ошибка при парсинге JSON:', error);

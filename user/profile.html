@@ -15,6 +15,7 @@
     <script defer src="../js/profile/changeMenu.js"></script>
     <script defer src="../js/profile/popup.js"></script>
     <script defer src="../js/profile/btnsWork.js"></script>
+    <script defer src="../js/profile/paletteChange.js"></script>
 </head>
 
 <body class="page">
@@ -22,7 +23,7 @@
     <main class="main">
         <div class="container main__container">
             <div class="main-profile flex">
-                <img class="main-profile__img" src="../img/users-basic.jpg" alt="Users photo">
+                <img class="main-profile__img" alt="Users photo">
                 <h1 class="main-profile__name"></h1>
                 <svg class="main-profile__svg" width="8" height="32" viewBox="0 0 8 32" fill="#FF4B4B" xmlns="http://www.w3.org/2000/svg">
                     <circle class="main-profile__svg-ball" cx="4" cy="4" r="4"/>
@@ -43,38 +44,45 @@
                 <p class="main-nav__descr">
                     Back to home page
                 </p>
-                <nav class="main-nav__nav">
-
-                </nav>
             </div>
             <div class="main-colorPicker">
                 <div class="main-colorPicker2">
                     <h2 class="main-colorPicker2__title">
                         Choice the style of the page you want
                     </h2>
-                    <div class="main-colorPicker2-separation">
-                        <div class="main-colorPicker-separation-miniPage">
-    
+                    <div class="main-colorPicker2-separation flex">
+                        <div class="main-colorPicker-separation-mini">
+                            <div class="main-colorPicker-separation-mini-header"></div>
+                            <div class="main-colorPicker-separation-mini-main">
+                                <div class="main-colorPicker-separation-mini-main-profile flex">
+                                    <img class="main-colorPicker-separation-mini-main-profile__img" src="../img/users-basic.jpg" alt="Users photo">
+                                    <h1 class="main-colorPicker-separation-mini-main-profile__name"></h1>
+                                </div>
+                                <div class="main-colorPicker-separation-mini-main-btn">
+                                    <p class="main-colorPicker-separation-mini-main-btn__btn">
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                         <form class="main-colorPicker2-separation-form" method="POST" action="../php/changeColor.php">
                             <div class="main-colorPicker2-separation-form-colorChoicer">
                                 <div class="main-colorPicker2-separation-form-colorChoicer-accent flex">
-                                    <label class="main-colorPicker2-separation-form-colorChoicer-accent__label" for="colorPicker">Choose an accent color: </label>
+                                    <label class="main-colorPicker2-separation-form-colorChoicer-accent__label" for="accentColorPicker">Choose an accent color: </label>
                                     <input class="main-colorPicker2-separation-form-colorChoicer-accent__input" type="color" id="accentColorPicker" name="accentColor" value="#ff4b4b">
                                 </div>
                                 
                                 <div class="main-colorPicker2-separation-form-colorChoicer-profile flex">
-                                    <label class="main-colorPicker2-separation-form-colorChoicer-profile__label" for="colorPicker">Choose a profile color: </label>
+                                    <label class="main-colorPicker2-separation-form-colorChoicer-profile__label" for="accentColorPicker">Choose a profile color: </label>
                                     <input class="main-colorPicker2-separation-form-colorChoicer-profile__input" type="color" id="profileColorPicker" name="profileColor" value="#272222">
                                 </div>
 
                                 <div class="main-colorPicker2-separation-form-colorChoicer-main flex">
-                                    <label class="main-colorPicker2-separation-form-colorChoicer-main__label" for="colorPicker">Choose a main color: </label>
+                                    <label class="main-colorPicker2-separation-form-colorChoicer-main__label" for="accentColorPicker">Choose a main color: </label>
                                     <input class="main-colorPicker2-separation-form-colorChoicer-main__input" type="color" id="mainColorPicker" name="mainColor" value="#251f1f">
                                 </div>
 
                                 <div class="main-colorPicker2-separation-form-colorChoicer-text flex">
-                                    <label class="main-colorPicker2-separation-form-colorChoicer-text__label" for="colorPicker">Choose a text color: </label>
+                                    <label class="main-colorPicker2-separation-form-colorChoicer-text__label" for="accentColorPicker">Choose a text color: </label>
                                     <input class="main-colorPicker2-separation-form-colorChoicer-text__input" type="color" id="textColorPicker" name="textColor" value="#ffffff">
                                 </div>
                             </div>

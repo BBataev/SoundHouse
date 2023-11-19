@@ -36,7 +36,7 @@
 
                     document.documentElement.style.setProperty('--color-main', userData['main']);
                     document.documentElement.style.setProperty('--color-hover', gay(userData['main']));
-                    console.log(                    gay(userData['main']));
+                    
                     document.documentElement.style.setProperty('--color-profile', userData['profile']);
                     document.documentElement.style.setProperty('--color-text', userData['text']);
 

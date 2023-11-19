@@ -30,6 +30,7 @@
 
     popupform.method = 'POST';
     popupbtn.textContent = 'Upload';
+    popupInName.id = 'bgImage'
     popupbtn.type = 'submit';
 
     popupdiv.classList.add('popupName');
