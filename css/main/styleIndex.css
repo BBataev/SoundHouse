@@ -187,16 +187,39 @@ img {
 }
 
 .main-info {
+    position: relative;
     width: 1340px;
     height: 830px;
     border-radius: 20px;
-    overflow-y:auto;
+    overflow: hidden;
+}
+
+.main-info-bl {
+    position: absolute;
+    transform: translateX(1400px);
+    opacity: 0;
+    transition: transform .4s ease-in-out, opacity .5s ease-in-out;  
+}
+
+.main-info-bl.scrolled {
+    transform: translateX(-1400px);
+}
+
+.main-info-bl.active {
+    transform: translate(0);
+    overflow-y: auto;
     overflow-x: hidden;
+    opacity: 1;
+    border-radius: 20px;
+    background-color: var(--color-profile);
 }
 
 .main-info-block {
     width: 1320px;
     height: 830px;
-    border-radius: 20px;
     background-color: var(--color-profile);
+}
+
+.gay {
+    margin: 0;
 }
