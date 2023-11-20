@@ -161,6 +161,7 @@ img {
     width: 350px;
     height: 700px;
     border-radius: 20px;
+    margin-bottom: 50px;
     background-color: var(--color-profile);
 }
 
@@ -184,6 +185,53 @@ img {
 
 .main-block-nav__nav-link.choosed {
     background-color: var(--color-accent);
+}
+
+.main-block-play {
+    width: 100%; /* Ширина элемента по ширине родительского контейнера */
+    max-width: 400px; /* Максимальная ширина элемента, если контейнер шире */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    background-color: #f0f0f0; /* Цвет фона */
+    color: #333; /* Цвет текста */
+    border: 1px solid #ccc; /* Граница */
+    border-radius: 5px; /* Радиус закругления углов */
+    display: block !important; /* Расположение блоком */
+    margin: auto; /* Центрирование по горизонтали */
+}
+
+/* Стили для элемента аудио */
+audio {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Оформление элементов управления */
+audio::-webkit-media-controls-panel {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button,
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-volume-control-container,
+audio::-webkit-media-controls-volume-slider-container {
+    color: #333;
+}
+
+audio::-webkit-media-controls-timeline {
+    height: 5px;
+}
+
+audio::-webkit-media-controls-timeline-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #333;
 }
 
 .main-info {
@@ -215,9 +263,19 @@ img {
 }
 
 .main-info-block {
-    width: 1320px;
+    width: 1300px;
     height: 830px;
     background-color: var(--color-profile);
+}
+
+.main-info-block-up-music {
+    margin: 0;
+    padding: 35px 74px;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--color-text);
+    background: var(--color-accent);
+    border-bottom: 1px solid;
 }
 
 .gay {
