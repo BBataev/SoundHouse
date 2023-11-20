@@ -17,9 +17,10 @@
     
             tracks.forEach(function(track) {
                 var trackDiv = document.createElement("div");
-                trackDiv.innerHTML = "<p>" + track.title + " - " + track.artist + "</p>";
+                trackDiv.classList.add('main-info-block-down')
+                trackDiv.innerHTML = "<p class='main-info-block-down__music'>" + track.title + " - " + track.artist + "</p>";
                 trackDiv.addEventListener("click", function() {
-                    playTrack(track.id);
+                    playTrack(track.filename);
                 });
                 tracksList.appendChild(trackDiv);
             });
@@ -27,7 +28,9 @@
     
         function playTrack(filename) {
             var audioPlayer = document.querySelector(".main-block-play");
-            audioPlayer.src = "../../users_media/music/" + filename + '.mp3';
+            for (var i = 0; i < 2; i++) {
+                audioPlayer.src = "../../users_media/music/" + filename + '.mp3';
+            }
             audioPlayer.play();
         }
     });

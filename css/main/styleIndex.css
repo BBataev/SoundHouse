@@ -268,7 +268,7 @@ audio::-webkit-media-controls-timeline-thumb {
     background-color: var(--color-profile);
 }
 
-.main-info-block-up-music {
+.main-info-block-up__title {
     margin: 0;
     padding: 35px 74px;
     font-size: 30px;
@@ -276,6 +276,26 @@ audio::-webkit-media-controls-timeline-thumb {
     color: var(--color-text);
     background: var(--color-accent);
     border-bottom: 1px solid;
+}
+
+.main-info-block-down{
+    height: 50px;
+    display: flex;
+    background-color: var(--color-brown);
+    align-items: center;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+}
+
+.main-info-block-down:hover{
+    background-color: var(--color-accent);
+}
+
+.main-info-block-down__music {
+    padding-left: 77px;
+    margin: 0;
+    font-size: 23px;
+    color: var(--color-text);
 }
 
 .gay {
