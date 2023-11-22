@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,10 +26,11 @@
             <div class="main-profile flex">
                 <img class="main-profile__img" alt="Users photo">
                 <h1 class="main-profile__name"></h1>
-                <svg class="main-profile__svg" width="8" height="32" viewBox="0 0 8 32" fill="#FF4B4B" xmlns="http://www.w3.org/2000/svg">
-                    <circle class="main-profile__svg-ball" cx="4" cy="4" r="4"/>
-                    <circle class="main-profile__svg-ball" cx="4" cy="16" r="4"/>
-                    <circle class="main-profile__svg-ball" cx="4" cy="28" r="4"/>
+                <svg class="main-profile__svg" width="8" height="32" viewBox="0 0 8 32" fill="#FF4B4B"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle class="main-profile__svg-ball" cx="4" cy="4" r="4" />
+                    <circle class="main-profile__svg-ball" cx="4" cy="16" r="4" />
+                    <circle class="main-profile__svg-ball" cx="4" cy="28" r="4" />
                 </svg>
             </div>
             <div class="main-menu">
@@ -45,17 +47,19 @@
                     Back to home page
                 </p>
             </div>
+
             <div class="main-colorPicker">
                 <div class="main-colorPicker2">
-                    <h2 class="main-colorPicker2__title">
-                        Choice the style of the page you want
-                    </h2>
+                    <div class="main-colorPicker2-info flex">
+                        <h2 class="main-colorPicker2-info__title">Choice the style of the page you want</h2>
+                    </div>
                     <div class="main-colorPicker2-separation flex">
                         <div class="main-colorPicker-separation-mini">
                             <div class="main-colorPicker-separation-mini-header"></div>
                             <div class="main-colorPicker-separation-mini-main">
                                 <div class="main-colorPicker-separation-mini-main-profile flex">
-                                    <img class="main-colorPicker-separation-mini-main-profile__img" src="../img/users-basic.jpg" alt="Users photo">
+                                    <img class="main-colorPicker-separation-mini-main-profile__img"
+                                        src="../img/users-basic.jpg" alt="Users photo">
                                     <h1 class="main-colorPicker-separation-mini-main-profile__name"></h1>
                                 </div>
                                 <div class="main-colorPicker-separation-mini-main-btn">
@@ -66,24 +70,32 @@
                         </div>
                         <form class="main-colorPicker2-separation-form" method="POST" action="../php/changeColor.php">
                             <div class="main-colorPicker2-separation-form-colorChoicer">
-                                <div class="main-colorPicker2-separation-form-colorChoicer-accent flex">
-                                    <label class="main-colorPicker2-separation-form-colorChoicer-accent__label" for="accentColorPicker">Choose an accent color: </label>
-                                    <input class="main-colorPicker2-separation-form-colorChoicer-accent__input" type="color" id="accentColorPicker" name="accentColor" value="#ff4b4b">
-                                </div>
-                                
-                                <div class="main-colorPicker2-separation-form-colorChoicer-profile flex">
-                                    <label class="main-colorPicker2-separation-form-colorChoicer-profile__label" for="accentColorPicker">Choose a profile color: </label>
-                                    <input class="main-colorPicker2-separation-form-colorChoicer-profile__input" type="color" id="profileColorPicker" name="profileColor" value="#272222">
+                                <div class="main-colorPicker2-separation-form-colorChoicer-accent flex colorChoicer__block">
+                                    <label class="main-colorPicker2-separation-form-colorChoicer-accent__label colorChoicer__label"
+                                        for="accentColorPicker">Choose an accent color: </label>
+                                    <input class="main-colorPicker2-separation-form-colorChoicer-accent__input colorChoicer__input"
+                                        type="color" id="accentColorPicker" name="accentColor" value="#ff4b4b">
                                 </div>
 
-                                <div class="main-colorPicker2-separation-form-colorChoicer-main flex">
-                                    <label class="main-colorPicker2-separation-form-colorChoicer-main__label" for="accentColorPicker">Choose a main color: </label>
-                                    <input class="main-colorPicker2-separation-form-colorChoicer-main__input" type="color" id="mainColorPicker" name="mainColor" value="#251f1f">
+                                <div class="main-colorPicker2-separation-form-colorChoicer-profile flex colorChoicer__block">
+                                    <label class="main-colorPicker2-separation-form-colorChoicer-profile__label colorChoicer__label"
+                                        for="accentColorPicker">Choose a profile color: </label>
+                                    <input class="main-colorPicker2-separation-form-colorChoicer-profile__input colorChoicer__input"
+                                        type="color" id="profileColorPicker" name="profileColor" value="#272222">
                                 </div>
 
-                                <div class="main-colorPicker2-separation-form-colorChoicer-text flex">
-                                    <label class="main-colorPicker2-separation-form-colorChoicer-text__label" for="accentColorPicker">Choose a text color: </label>
-                                    <input class="main-colorPicker2-separation-form-colorChoicer-text__input" type="color" id="textColorPicker" name="textColor" value="#ffffff">
+                                <div class="main-colorPicker2-separation-form-colorChoicer-main flex colorChoicer__block">
+                                    <label class="main-colorPicker2-separation-form-colorChoicer-main__label colorChoicer__label"
+                                        for="accentColorPicker">Choose a main color: </label>
+                                    <input class="main-colorPicker2-separation-form-colorChoicer-main__input colorChoicer__input"
+                                        type="color" id="mainColorPicker" name="mainColor" value="#251f1f">
+                                </div>
+
+                                <div class="main-colorPicker2-separation-form-colorChoicer-text flex colorChoicer__block">
+                                    <label class="main-colorPicker2-separation-form-colorChoicer-text__label colorChoicer__label"
+                                        for="accentColorPicker">Choose a text color: </label>
+                                    <input class="main-colorPicker2-separation-form-colorChoicer-text__input colorChoicer__input"
+                                        type="color" id="textColorPicker" name="textColor" value="#ffffff">
                                 </div>
                             </div>
                             <button class="main-colorPicker2-separation-form__button">
@@ -93,7 +105,44 @@
                     </div>
                 </div>
             </div>
+
+            <div class="popup popupProfile">
+                <div class="popup2">
+                    <div class="popupInfo">
+                        <h2 class="popupInfo__title">Upload new profile photo</h2>
+                    </div>
+                    <form method="POST" class="popupform" action="../php/uploadPhoto.php" enctype="multipart/form-data">
+                        <input id="popupProfile" class="popupinfophoto" type="file" name="image" placeholder="Username (max 20)" accept="image/*">
+                        <button type="submit" class="popupbtn">Upload</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="popup popupName">
+                <div class="popup2">
+                    <div class="popupInfo">
+                        <h2 class="popupInfo__title">Enter your new name</h2>
+                    </div>
+                    <form method="POST" class="popupform" action="../php/changeName.php" enctype="multipart/form-data">
+                        <input id="popupName" class="popupinfophoto" type="username" name="username" placeholder="Username (max 20)" accept="image/*">
+                        <button type="submit" class="popupbtn">Upload</button>
+                    </form>
+                </div>
+            </div>
+        
+            <div class="popup popupBg">
+                <div class="popup2">
+                    <div class="popupInfo">
+                        <h2 class="popupInfo__title">Upload new background photo</h2>
+                    </div>
+                    <form method="POST" class="popupform" action="../php/changeBg.php" enctype="multipart/form-data">
+                        <input id="bgImage" class="popupinfophoto" type="file" name="image" placeholder="Username (max 20)" accept="image/*">
+                        <button type="submit" class="popupbtn">Upload</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
 </body>
+
 </html>

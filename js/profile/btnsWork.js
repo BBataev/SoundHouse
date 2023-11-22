@@ -1,5 +1,14 @@
 (() => {
 
+    const closePopup = (obj) => {
+        window.addEventListener('click', (event) => {
+            if (event.target === obj) {
+                obj.classList.remove('active');
+                document.body.classList.remove("no-scroll");
+            }
+        });
+    };
+
     //That's a "Back to main button" its function is to back on the main page
     const backBtn = document.querySelector('.main-nav__descr');
     
@@ -19,71 +28,29 @@
     const changeName = document.querySelector('.main-changeMenu__changeName');
     const changeBg = document.querySelector('.main-changeMenu__changeBg');
     const changeStyle = document.querySelector('.main-changeMenu__changeStyle');
+
     
-    //creating another popup for possibility to write new name in the form
-    const popupdiv = document.createElement('div');
-    const popupinfo = document.createElement('h2');
-    const popupdiv2 = document.createElement('div');
-    const popupform = document.createElement('form');
-    const popupInName = document.createElement('input');
-    const popupbtn = document.createElement('button');
-
-    popupform.method = 'POST';
-    popupbtn.textContent = 'Upload';
-    popupInName.id = 'bgImage'
-    popupbtn.type = 'submit';
-
-    popupdiv.classList.add('popupName');
-    popupdiv2.classList.add('popup2');
-    popupinfo.classList.add('popupinfo');
-    popupform.classList.add('popupform');
-    popupInName.classList.add('popupinfophoto');
-    popupbtn.classList.add('popupbtn');
-
-    document.body.appendChild(popupdiv);
-    popupdiv.appendChild(popupdiv2);
-    popupdiv2.appendChild(popupinfo);
-    popupdiv2.appendChild(popupform);
-    popupform.appendChild(popupInName);
-    popupform.appendChild(popupbtn);
-
     changeName.addEventListener('click', () => {
-        popupInName.type = 'username';
-        popupInName.name = "username";
-        popupInName.placeholder = 'Username (max 20)'
-        popupinfo.textContent = 'Enter your new name';
-        popupform.action = '../php/changeName.php'
+        const popupdiv = document.querySelector('.popupName');
         popupdiv.classList.add('active');
+
+        closePopup(popupdiv);
     });
 
+    
     changeBg.addEventListener('click', () => {
-        popupInName.type = 'file';
-        popupInName.accept = 'image/*'
-        popupInName.name = "image";
-        popupinfo.textContent = 'Upload new background';
-        popupform.enctype = "multipart/form-data";
-        popupform.action = '../php/changeBg.php'
+        const popupdiv = document.querySelector('.popupBg');
         popupdiv.classList.add('active');
-    });
 
+        closePopup(popupdiv);
+    });
+    
+    
     changeStyle.addEventListener('click', () => {
         const popupdiv = document.querySelector('.main-colorPicker');
-
         popupdiv.classList.add('active');
-        window.addEventListener('click', (event) => {
-            if (event.target === popupdiv) {
-                popupdiv.classList.remove('active');
-                document.body.classList.remove("no-scroll");
-            }
-        });
-    });
 
-    window.addEventListener('click', (event) => {
-        if (event.target === popupdiv) {
-            popupdiv.classList.remove('active');
-            document.body.classList.remove("no-scroll");
-        }
+        closePopup(popupdiv);
     });
-
 
 })();

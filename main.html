@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,8 +20,9 @@
     <script defer src="js/main/navChange.js"></script>
     <script defer src="js/main/addMusic.js"></script>
     <script defer src="js/main/btnWork.js"></script>
-    
+
 </head>
+
 <body class="page">
     <header class="header">
         <div class="container header__container flex">
@@ -28,7 +30,7 @@
                 <img class="header__link-img" src="img/logo.svg" alt="Logo Bateev">
             </a>
             <div class="header-profile flex"> <!-- getting from data base -->
-                <h1 class="header-profile__name">Username</h1> 
+                <h1 class="header-profile__name">Username</h1>
                 <img class="header-profile__img" src="img/users-basic.jpg" alt="Profile photo">
             </div>
         </div>
@@ -39,25 +41,25 @@
             <div class="main-block">
                 <div class="main-block-nav">
                     <nav class="main-block-nav__nav flex list-reset">
-                       <p class="main-block-nav__nav-link home">
+                        <p class="main-block-nav__nav-link home">
                             Home
-                       </p>
-                       <p class="main-block-nav__nav-link search">
+                        </p>
+                        <p class="main-block-nav__nav-link search">
                             Search
-                       </p>
-                       <p class="main-block-nav__nav-link music">
+                        </p>
+                        <p class="main-block-nav__nav-link music">
                             My music
-                       </p>
-                       <p class="main-block-nav__nav-link albums">
+                        </p>
+                        <p class="main-block-nav__nav-link albums">
                             Albums
-                       </p>
-                       <p class="main-block-nav__nav-link following">
+                        </p>
+                        <p class="main-block-nav__nav-link following">
                             Following
-                       </p>
+                        </p>
                     </nav>
                 </div>
 
-                <audio  class="main-block-play" controls>
+                <audio class="main-block-play" controls>
                 </audio>
             </div>
 
@@ -67,28 +69,29 @@
                         <h1 class="gay">home</h1>
                     </div>
                 </div>
-    
+
                 <div class="main-info-bl main-info-search">
                     <div class="main-info-block">
                         <h1 class="gay">search</h1>
                     </div>
                 </div>
-    
+
                 <div class="main-info-bl main-info-music">
                     <div class="main-info-block main-info-block-music">
                         <div class="main-info-block-up">
                             <h2 class="main-info-block-up__title">Your music</h2>
-                            <img class="main-info-block-up__icon" src="/img/addMusic.png" alt="Инконка для добавления своей музыки">
+                            <img class="main-info-block-up__icon" src="/img/addMusic.png"
+                                alt="Инконка для добавления своей музыки">
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="main-info-bl main-info-albums">
                     <div class="main-info-block">
                         <h1 class="gay">albums</h1>
                     </div>
                 </div>
-    
+
                 <div class="main-info-bl main-info-following">
                     <div class="main-info-block">
                         <h1 class="gay">following</h1>
@@ -97,5 +100,25 @@
             </div>
         </div>
     </main>
+
+    <div class="popups">
+        <div class="addMusicPopup">
+            <div class="addMusicPopup2">
+                <div class="addMusicPopupTitle">
+                    <h2 class="addMusicPopupTitle__text">Add music you like</h2>
+                </div>
+                <form method="POST" class="addMusicPopupForm" enctype="multipart/form-data"
+                    action="../php/uploadMusic.php">
+                    <div class="addMusicPopupInput flex">
+                        <input class="addMusicPopupInputText" name="title" placeholder="Title">
+                        <input class="addMusicPopupInputText" name="artist" placeholder="Artist">
+                    </div>
+                    <input class="addMusicPopupInputFile" type="file" accept=".mp3" name="mp3">
+                    <button type="submit" class="addMusicPopupBtn">Upload</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

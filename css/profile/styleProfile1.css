@@ -248,21 +248,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 50px 30px;
-    border-radius: 20px;
+    padding-bottom: 30px;
+    border-radius: 28px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    background: var(--color-main);
+    background-color: var(--color-profile);
 }
 
 .popupinfophoto {
-    outline: none;
+    border: none;
     border-radius: 15px;
     padding: 10px 25px;
 }
 
-.popupinfo {
+.popupInfo {
+    border-bottom: 1px solid var(--color-text);
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    padding: 35px 50px 30px;
+    margin-bottom: 30px;
+    background-color: var(--color-accent);
+}
+
+.popupInfo__title {
     margin: 0;
-    margin-bottom: 25px;
     color: var(--color-text);
 }
 
@@ -274,7 +282,7 @@
 }
 
 .popupbtn {
-    border: 1px solid rgba(122, 18, 18, 0.5);
+    border: none;
     border-radius: 20px;
     padding: 8px 36px;
     font-family: 'Montserrat-Alt1', sans-serif;
@@ -286,7 +294,7 @@
 }
 
 .popupbtn:hover {
-    background-color: #cc2f2f;
+    background-color: var(--color-accent-active);
 }
 
 .main-nav {
@@ -353,19 +361,30 @@
 
 .main-colorPicker2 {
     position: relative;
-    padding: 30px 50px 30px;
-    border-radius: 20px;
+    padding-bottom: 60px;
+    border-radius: 28px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    background-color: var(--color-main);
+    background-color: var(--color-profile);
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.main-colorPicker2__title {
-    margin: 0;
+.main-colorPicker2-info {
+    justify-content: center;
+    align-items: center;
+    width: 1488px;
+    border-bottom: 1px solid var(--color-text);
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    padding: 45px 0;
     margin-bottom: 40px;
+    background-color: var(--color-accent);
+}
+
+.main-colorPicker2-info__title {
+    margin: 0;
     color: var(--color-text);
 }
 
@@ -386,40 +405,14 @@
     margin-bottom: 80px;
 }
 
-.main-colorPicker2-separation-form-colorChoicer-accent {
+.colorChoicer__block {
     gap: 20px;
     align-items: center;
 }
 
-.main-colorPicker2-separation-form-colorChoicer-profile {
-    gap: 20px;
-    align-items: center;
-}
 
-.main-colorPicker2-separation-form-colorChoicer-main {
-    gap: 20px;
-    align-items: center;
-}
-
-.main-colorPicker2-separation-form-colorChoicer-text {
-    gap: 20px;
-    align-items: center;
-}
-
-.main-colorPicker2-separation-form-colorChoicer-accent__label {
+.colorChoicer__label {
     color: var(--color-text);    
-}
-
-.main-colorPicker2-separation-form-colorChoicer-profile__label {
-    color: var(--color-text);
-}
-
-.main-colorPicker2-separation-form-colorChoicer-main__label {
-    color: var(--color-text);
-}
-
-.main-colorPicker2-separation-form-colorChoicer-text__label {
-    color: var(--color-text);
 }
 
 .main-colorPicker2-separation-form__button {
@@ -430,6 +423,11 @@
     color: var(--color-text);
     background-color: var(--color-accent);
     cursor: pointer;
+    transition: background-color .2s ease-in-out;
+}
+
+.main-colorPicker2-separation-form__button:hover {
+    background-color: var(--color-accent-active);
 }
 
 input[type="color"] {
