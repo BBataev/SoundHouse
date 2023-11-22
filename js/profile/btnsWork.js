@@ -47,7 +47,6 @@
     popupform.appendChild(popupInName);
     popupform.appendChild(popupbtn);
 
-    //the button work itself, pathetic right?
     changeName.addEventListener('click', () => {
         popupInName.type = 'username';
         popupInName.name = "username";

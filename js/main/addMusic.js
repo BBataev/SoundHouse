@@ -9,7 +9,7 @@
                 displayTracks(tracks);
             }
         };
-        xhr.open("GET", "../../php/musicInfo.php", true);
+        xhr.open("GET", "../../php/getMusic.php", true);
         xhr.send();
     
         function displayTracks(tracks) {
@@ -29,7 +29,7 @@
         function playTrack(filename) {
             var audioPlayer = document.querySelector(".main-block-play");
             for (var i = 0; i < 2; i++) {
-                audioPlayer.src = "../../users_media/music/" + filename + '.mp3';
+                audioPlayer.src = "../../users_media/music/" + filename + '_MUSIC.mp3';
             }
             audioPlayer.play();
         }
