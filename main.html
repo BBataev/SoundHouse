@@ -20,6 +20,7 @@
     <script defer src="js/main/navChange.js"></script>
     <script defer src="js/main/addMusic.js"></script>
     <script defer src="js/main/btnWork.js"></script>
+    <script defer src="js/main/audioControl.js"></script>
 
 </head>
 
@@ -30,8 +31,8 @@
                 <img class="header__link-img" src="img/logo.svg" alt="Logo Bateev">
             </a>
             <div class="header-profile flex"> <!-- getting from data base -->
-                <h1 class="header-profile__name">Username</h1>
-                <img class="header-profile__img" src="img/users-basic.jpg" alt="Profile photo">
+                <h1 class="header-profile__name"></h1>
+                <img class="header-profile__img" alt="Profile photo">
             </div>
         </div>
     </header>
@@ -59,8 +60,33 @@
                     </nav>
                 </div>
 
-                <audio class="main-block-play" controls>
+                <audio class="main-block-play">
                 </audio>
+                <div class="main-block-play-changed">
+                    <div class="main-block-play-changed-controls flex">
+                        <svg class="main-block-play-changed-controls__last" width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.6337 6.11968C9.93284 6.49733 9.93284 7.50267 10.6337 7.88032L18.7756 12.2677C19.4419 12.6267 20.25 12.1442 20.25 11.3874V2.61263C20.25 1.85582 19.4419 1.37329 18.7756 1.7323L10.6337 6.11968Z" fill="#FF4B4B"/>
+                            <path d="M1.63368 6.11968C0.93284 6.49733 0.932841 7.50267 1.63368 7.88032L9.77563 12.2677C10.4419 12.6267 11.25 12.1442 11.25 11.3874L11.25 2.61263C11.25 1.85582 10.4419 1.37329 9.77563 1.7323L1.63368 6.11968Z" fill="#FF4B4B"/>
+                        </svg>
+                        <div class="main-block-play-changed-controls-block flex">
+                            <svg class="main-block-play-changed-controls-block__play active" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.4064 7.12373C15.0973 7.50363 15.0973 8.49637 14.4064 8.87627L1.73182 15.8455C1.06537 16.2119 0.25 15.7298 0.25 14.9692L0.25 1.03081C0.25 0.270251 1.06537 -0.211916 1.73182 0.154537L14.4064 7.12373Z" fill="#FF4B4B"/>
+                            </svg>
+                            <svg class="main-block-play-changed-controls-block__pause" width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="4" height="16" rx="1" fill="#FF4B4B"/>
+                                <rect x="8" width="4" height="16" rx="1" fill="#FF4B4B"/>
+                            </svg>
+                                
+                        </div>
+                        <svg class="main-block-play-changed-controls__next" width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3663 6.11968C14.0672 6.49733 14.0672 7.50267 13.3663 7.88032L5.22437 12.2677C4.55813 12.6267 3.75 12.1442 3.75 11.3874L3.75 2.61263C3.75 1.85582 4.55813 1.37329 5.22437 1.7323L13.3663 6.11968Z" fill="#FF4B4B"/>
+                            <path d="M22.3663 6.11968C23.0672 6.49733 23.0672 7.50267 22.3663 7.88032L14.2244 12.2677C13.5581 12.6267 12.75 12.1442 12.75 11.3874L12.75 2.61263C12.75 1.85582 13.5581 1.37329 14.2244 1.7323L22.3663 6.11968Z" fill="#FF4B4B"/>
+                        </svg>
+                            
+                            
+                    </div>
+                    <input class="main-block-play-changed__input" type="range" value="0">
+                </div>
             </div>
 
             <div class="main-info flex">
@@ -82,6 +108,8 @@
                             <h2 class="main-info-block-up__title">Your music</h2>
                             <img class="main-info-block-up__icon" src="/img/addMusic.png"
                                 alt="Инконка для добавления своей музыки">
+                        </div>
+                        <div class="main-info-block-music-tracks">
                         </div>
                     </div>
                 </div>

@@ -188,38 +188,64 @@ img {
 }
 
 /* Стили для элемента аудио */
-audio {
+.main-block-play-changed__input {
+    -webkit-appearance: none;
     width: 100%;
-    margin-bottom: 10px;
+    height: 6px;
+    border-radius: 4px;
+    background-color: var(--color-accent);
+    cursor: pointer;
 }
 
-/* Оформление элементов управления */
-audio::-webkit-media-controls-panel {
-    background-color: #e0e0e0;
-    border-radius: 5px;
-}
-
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-pause-button,
-audio::-webkit-media-controls-seek-back-button,
-audio::-webkit-media-controls-seek-forward-button,
-audio::-webkit-media-controls-timeline,
-audio::-webkit-media-controls-current-time-display,
-audio::-webkit-media-controls-time-remaining-display,
-audio::-webkit-media-controls-volume-control-container,
-audio::-webkit-media-controls-volume-slider-container {
-    color: #333;
-}
-
-audio::-webkit-media-controls-timeline {
-    height: 5px;
-}
-
-audio::-webkit-media-controls-timeline-thumb {
-    height: 15px;
-    width: 15px;
+.main-block-play-changed__input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 11px;
+    width: 11px;
+    background-color: var(--color-text);
     border-radius: 50%;
-    background-color: #333;
+    cursor: pointer;
+}
+
+.main-block-play-changed-controls {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 12px;
+}
+
+.main-block-play-changed-controls-block {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--color-text);
+    cursor: pointer;
+}
+
+.main-block-play-changed-controls-block__play {
+    position: absolute;
+    opacity: 0;
+}
+
+.main-block-play-changed-controls-block__pause {
+    position: absolute;
+    opacity: 0;
+}
+
+.main-block-play-changed-controls-block__play.active {
+    opacity: 1;
+}
+
+.main-block-play-changed-controls-block__pause.active {
+    opacity: 1;
+}
+
+.main-block-play-changed-controls__last,
+.main-block-play-changed-controls__next{
+    cursor: pointer;
 }
 
 .main-info {
@@ -275,23 +301,34 @@ audio::-webkit-media-controls-timeline-thumb {
 .main-info-block-up__icon {
     height: 50px;
     width: 50px;
+    cursor: pointer;
 }
 
-.main-info-block-down{
+.main-info-block-down {
     height: 50px;
     display: flex;
-    background-color: var(--color-brown);
     align-items: center;
     cursor: pointer;
-    transition: background-color .2s ease-in-out;
+    transition: background-color .1s ease-in-out;
 }
 
 .main-info-block-down:hover{
-    background-color: var(--color-accent);
+    background-color: var(--color-hover);
+}
+
+.main-info-block-down:hover .main-info-block-down__number {
+    color: var(--color-text);
+}
+
+.main-info-block-down__number {
+    margin: 0;
+    padding-left: 22px;
+    color: var(--color-gray);
+    transition: color .1s;
 }
 
 .main-info-block-down__music {
-    padding-left: 77px;
+    padding-left: 27px;
     margin: 0;
     font-size: 23px;
     color: var(--color-text);

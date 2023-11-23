@@ -220,6 +220,7 @@
 /**  popup  **/
 
 .popup {
+    z-index: 5;
     display: flex;
     position: fixed;
     flex-direction: column;
@@ -232,7 +233,6 @@
     background-color: rgba(31, 28, 28, 0.5);
     opacity: 0;
     visibility: hidden;
-    z-index: 2;
     transition: opacity 0.3s, visibility 0.3s;
 }
 
@@ -310,29 +310,6 @@
     color: var(--color-text);
     background-color: var(--color-accent);
     cursor: pointer;
-}
-
-.popupName {
-    z-index: 5;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(31, 28, 28, 0.5);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
-}
-
-.popupName.active {
-    display: flex;
-    opacity: 1;
-    visibility: visible;
 }
 
 /**  colorPicker  **/
