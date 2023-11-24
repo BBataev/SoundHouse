@@ -32,7 +32,7 @@
 
 .profile__profile:hover {
     color: var(--color-accent);
-    background-color: var(--color-hover);
+    background-color: var(--color-hover-main);
 }
 
 .profile__settings {
@@ -45,7 +45,7 @@
 
 .profile__settings:hover {
     color: var(--color-accent);
-    background-color: var(--color-hover);
+    background-color: var(--color-hover-main);
 }
 
 .profile__exit {
@@ -61,5 +61,5 @@
 .profile__exit:hover {
 
     color: var(--color-accent);
-    background-color: var(--color-hover);
+    background-color: var(--color-hover-main);
 }

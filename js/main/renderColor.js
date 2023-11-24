@@ -6,7 +6,7 @@
         var g = parseInt(color.substring(3, 5), 16);
         var b = parseInt(color.substring(5, 7), 16);
 
-        var brightnessFactor = 1.2;
+        var brightnessFactor = 1.4;
         r = Math.min(Math.round(r * brightnessFactor), 255);
         g = Math.min(Math.round(g * brightnessFactor), 255);
         b = Math.min(Math.round(b * brightnessFactor), 255);
@@ -31,9 +31,11 @@
                     document.documentElement.style.setProperty('--color-accent-active', gay(userData['accent']));
 
                     document.documentElement.style.setProperty('--color-main', userData['main']);
-                    document.documentElement.style.setProperty('--color-hover', gay(userData['main']));
+                    document.documentElement.style.setProperty('--color-hover-main', gay(userData['main']));
                     
                     document.documentElement.style.setProperty('--color-profile', userData['profile']);
+                    document.documentElement.style.setProperty('--color-hover-profile', gay(userData['profile']));
+
                     document.documentElement.style.setProperty('--color-text', userData['text']);
 
                 } catch (error) {

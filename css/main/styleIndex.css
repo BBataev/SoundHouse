@@ -312,19 +312,32 @@ img {
     transition: background-color .1s ease-in-out;
 }
 
-.main-info-block-down:hover{
-    background-color: var(--color-hover);
+.main-info-block-down.active .main-info-block-down__number {
+    color: var(--color-accent);
+}
+
+.main-info-block-down.active .main-info-block-down__music {
+    color: var(--color-accent);
+}
+
+.main-info-block-down:hover {
+    background-color: var(--color-hover-profile);
 }
 
 .main-info-block-down:hover .main-info-block-down__number {
     color: var(--color-text);
 }
 
+.main-info-block-down.active:hover .main-info-block-down__number {
+    color: var(--color-accent);
+}
+
 .main-info-block-down__number {
+    width: 35px;
     margin: 0;
     padding-left: 22px;
     color: var(--color-gray);
-    transition: color .1s;
+    transition: color .15s;
 }
 
 .main-info-block-down__music {
@@ -332,10 +345,7 @@ img {
     margin: 0;
     font-size: 23px;
     color: var(--color-text);
-}
-
-.gay {
-    margin: 0;
+    transition: color .15s;
 }
 
 .addMusicPopup {

@@ -73,6 +73,7 @@ img {
     --color-brown-2: #272222;
     --color-brown-3: #2b2323;
     --color-burgundy: #240e0e;
-    --color-hover: #424242;
+    --color-hover-main: #424242;
+    --color-hover-profile: #525252;
     --color-gray: #757575;
 }
