@@ -14,8 +14,8 @@ function generateRandomString($length) {
 }
 
 $accent = '#ff4b4b';
-$profile = '#251f1f';
-$main = '#272222';
+$profile = '#565656';
+$main = '#383838';
 $text = '#ffffff';
 
 $randomValue = generateRandomString(44);

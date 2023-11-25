@@ -118,6 +118,7 @@
         audioPlayer.onended = () => {
             currentTrack = (currentTrack + 1) % tracksMas.length;
             playTrack(tracksMas[currentTrack].filename);
+            stylePlayingTrack(currentTrack);
         };
 
         // document.addEventListener('keydown', (e) => {
