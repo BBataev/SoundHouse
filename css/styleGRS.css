@@ -22,42 +22,38 @@ img {
 
 /** Montserrat-Alt1 Regular **/
 @font-face {
-    font-family: 'Montserrat-Alt1';
+    font-family: 'Cruinn';
     font-weight: 400;
     font-style: normal;
-    src: local('Montserrat-Alt1'),
-         url('../fonts/MontserratAlt1-Regular.woff2') format('woff2'),
-         url('../fonts/MontserratAlt1-Regular.woff') format('woff');
+    src: local('Cruinn'),
+         url('../fonts/Cruinn-Regular.ttf') format('ttf'),
 }
 
-/** Montserrat-Alt1 Medium **/
+/** Cruinn Medium **/
 @font-face {
-    font-family: "Montserrat-Alt1";
+    font-family: "Cruinn";
     font-weight: 500;
     font-style: normal;
-    src: local('Montserrat-Alt1'),
-         url("../fonts/MontserratAlt1-Medium.woff2") format("woff2"),
-         url("../fonts/MontserratAlt1-Medium.woff") format("woff");
+    src: local('Cruinn'),
+         url("../fonts/Cruinn-Medium.ttf") format("ttf"),
 }
 
-/** Montserrat-Alt1 SemiBold **/
+/** Cruinn SemiBold **/
 @font-face {
-    font-family: "Montserrat-Alt1";
+    font-family: "Cruinn";
     font-weight: 600;
     font-style: normal;
-    src: local('Montserrat-Alt1'),
-         url("../fonts/MontserratAlt1-SemiBold.woff2") format("woff2"),
-         url("../fonts/MontserratAlt1-SemiBold.woff") format("woff");
+    src: local('Cruinn'),
+         url("../fonts/Cruinn-Bold.ttf") format("ttf"),
 }
 
-/** Montserrat-Alt1 Bold **/
+/** Cruinn Bold **/
 @font-face {
-    font-family: "Montserrat-Alt1";
+    font-family: "Cruinn";
     font-weight: 700;
     font-style: normal;
-    src: local('Montserrat-Alt1'),
-         url("../fonts/MontserratAlt1-Bold.woff2") format("woff2"),
-         url("../fonts/MontserratAlt1-Bold.woff") format("woff");
+    src: local('Cruinn'),
+         url("../fonts/Cruinn-Black.ttf") format("ttf"),
 }
 
 :root {

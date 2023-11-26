@@ -34,46 +34,6 @@ img {
     background-color: var(--color-accent); 
 }
 
-/** Montserrat-Alt1 Regular **/
-@font-face {
-    font-family: 'Montserrat-Alt1';
-    font-weight: 400;
-    font-style: normal;
-    src: local('Montserrat-Alt1'),
-         url('../../fonts/MontserratAlt1-Regular.woff2') format('woff2'),
-         url('../fonts/MontserratAlt1-Regular.woff') format('woff');
-}
-
-/** Montserrat-Alt1 Medium **/
-@font-face {
-    font-family: "Montserrat-Alt1";
-    font-weight: 500;
-    font-style: normal;
-    src: local('Montserrat-Alt1'),
-         url('../../fonts/MontserratAlt1-Medium.woff2') format("woff2"),
-         url("../fonts/MontserratAlt1-Medium.woff") format("woff");
-}
-
-/** Montserrat-Alt1 SemiBold **/
-@font-face {
-    font-family: "Montserrat-Alt1";
-    font-weight: 600;
-    font-style: normal;
-    src: local('Montserrat-Alt1'),
-         url('../../fonts/MontserratAlt1-SemiBold.woff2') format("woff2"),
-         url("../fonts/MontserratAlt1-SemiBold.woff") format("woff");
-}
-
-/** Montserrat-Alt1 Bold **/
-@font-face {
-    font-family: "Montserrat-Alt1";
-    font-weight: 700;
-    font-style: normal;
-    src: local('Montserrat-Alt1'),
-         url('../../fonts/MontserratAlt1-Bold.woff2') format("woff2"),
-         url("../fonts/MontserratAlt1-Bold.woff") format("woff");
-}
-
 .flex {
     display: flex;
 }
@@ -87,8 +47,7 @@ img {
 .page {
     min-width: 320px;
     margin: 0;
-    font-family: 'Montserrat-Alt1', sans-serif;
-    overflow: hidden;
+    font-family: 'Trebuchet MS', sans-serif;
     background-color: var(--color-main);
 }
 
@@ -190,11 +149,14 @@ img {
 /* Стили для элемента аудио */
 .main-block-play-changed {
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .main-block-play-changed__input {
     -webkit-appearance: none;
     height: 6px;
+    width: 600px;
     border-radius: 4px;
     background-color: var(--color-accent);
     cursor: pointer;
@@ -230,11 +192,13 @@ img {
 
 .main-block-play-changed-controls-block__play {
     position: absolute;
+    fill: var(--color-accent);
     opacity: 0;
 }
 
 .main-block-play-changed-controls-block__pause {
     position: absolute;
+    fill: var(--color-accent);
     opacity: 0;
 }
 
@@ -249,6 +213,7 @@ img {
 .main-block-play-changed-controls__last,
 .main-block-play-changed-controls__next{
     cursor: pointer;
+    fill: var(--color-accent);
 }
 
 .main-info {
@@ -413,7 +378,7 @@ img {
     border: none;
     border-radius: 15px;
     padding: 10px 15px;
-    font-family: 'Montserrat-Alt1', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     font-size: 18px;
 }
 
@@ -421,7 +386,7 @@ img {
     border: none;
     border-radius: 15px;
     padding: 12px 44px;
-    font-family: 'Montserrat-Alt1', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     font-size: 20px;
     color: var(--color-text);
     background-color: var(--color-accent);

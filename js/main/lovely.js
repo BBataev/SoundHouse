@@ -39,9 +39,7 @@
       animtext.remove();
     }, 2000); 
 
-    var now = new Date();
-    now.setTime(now.getTime() + (30 * 60 * 1000));
-    document.cookie = "animation = 1; max-age =" + now.toUTCString() + "; path=/";
+    document.cookie = "animation = 1; max-age =" + 30 * 60 * 30 + "; path=/";
   }
 
 })();
